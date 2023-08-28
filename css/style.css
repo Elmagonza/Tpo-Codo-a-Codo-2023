@@ -1,37 +1,80 @@
 *{
+    margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#inicio{
+    position: relative;
+}
+
+/*Nav bar */
 #navbar{
-    display: flex;
     position: fixed;
+    display: inline-block ;
     background-color: black;
     width: 100%;
-    margin-left:-12px;
-    
-    
+    z-index: 100;
+
 }
 
-.logo{
-    display:flex;
-    height: 66px;
-    margin-left: 20px;
-    margin-top: 15px;
+/*Logo del nav*/
+#navbar div.logo{
+    float:none;
+	display: inline-block;
+	position: relative;
+	margin: 1em;
+	text-align: left;
+	padding: 0;
+    height: 6em;
+	
 }
 
-#navbar.menu.item{
-    position:relative;
-    text-align: right;
+#navbar div.logo img{
+    max-height: 100%;
+}
+
+
+/*Menu falta hacerlo hambuerguesa*/
+#navbar ul.menu{
+    float: right;
     list-style: none;
-    text-decoration-line:none;
-    
+    overflow: hidden; 
 }
-.first{
+#navbar ul.menu li{
+    display: inline;
+    float: right;
+    font-size: 20px;
+}
+#navbar ul.menu li a{
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar ul.menu li a:hover{
+    background:red;
+}
+
+/*---Imagen Inicio---*/
+/*.first{
     position:relative;
     
 }
+
 #img_inicio{
     margin-left: 0;
+    position:relative;
     
 
+}
+*/
+
+/*Cartel de presentacion*/
+.presentacion{
+    background-color: aliceblue;
+    border-radius: 12px;
+    margin: 1em;
+    padding: 1em;
 }
 
