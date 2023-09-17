@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor-grid > *{
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+   
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "main"
+    "footer";
+}
+
+/*Nav bar */
+.header-grid{
+    background-color: rgb(0, 0, 0);
+    grid-area: header;
+    padding: 1em;
+}
+
+.header-grid{
+    display:grid;
+    grid-template-areas: "logo nav";
+}
+/*Logo del nav*/
+#navbar-grid img{
+    grid-area: logo;
+    width: 3.9em;
+    margin-left:1em;
+	
+}
+
+
+/*Menu falta hacerlo hambuerguesa*/
+ul.menu{
+    grid-area: nav ;
+    margin: 1.5em;
+    text-align: right;
+}
+#navbar-grid ul.menu li{
+    display: inline;
+    font-size: 1.5em;
+    align-content: right;
+}
+#navbar-grid ul.menu li a{ 
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar-grid ul.menu li a:hover{
+    background:red;
+    border-radius: 15px;
+}
+
+/*Sector del main*/
+.main{
+    grid-area: main;
+    background-color: rgba(192, 239, 192, 0.958);
+    
+
+}
+/*---Imagen Inicio---*/
+
+#img_inicio{
+    display: inline;
+    position:relative;  
+}
+
+
+/*Cartel de presentacion*/
+.presentacion{
+    background-color: aliceblue;
+    border-radius: 12px;
+    margin: 1em;
+    padding: 1em;
+}
+
