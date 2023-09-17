@@ -30,11 +30,12 @@
 .header-grid{
     display:grid;
     grid-template-areas: "logo nav";
+    
 }
 /*Logo del nav*/
 #navbar-grid img{
     grid-area: logo;
-    width: 3.9em;
+    width: 4.2em;
     margin-left:1em;
 	
 }
