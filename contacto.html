@@ -36,33 +36,24 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div>
+                    <form action="https://formspree.io/f/mzblgbje" method="post">
 
-                        <form className="row" onSubmit={enviarDatos}>
-                            <h1>Contactanos<span></span></h1>
-                            
-                            <div className='col-md-3'>
-                            <input type="text" name="nombre" id="" placeholder='nombre'
-                            onChange={handleInputChange}/>
-                            </div>
-                            
-                            <div className='col-md-3'>
-                            <input type="text" name="apellido" id="" placeholder='apellido'
-                            onChange={handleInputChange}/>
-                            </div>
-                            
-                            <div className='col-md-3'>
-                            
-                            
-                            <input type="text" name="Mail" id="" placeholder='mail'
-                            onChange={handleInputChange}/>
-                            </div>
-                            
-                            <textarea name="mensage" id="" cols="30" rows="10" placeholder=''/>
-                            <button className='btn btn-primary'> enviar</button>
-                            
-                            
-                            
-                               </form>
+                        <ul>
+                            <li>
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="user_name" />
+                            </li>
+                            <li>
+                                <label for="mail">Correo electrónico:</label>
+                                <input type="email" id="mail" name="user_mail" />
+                            </li>
+                            <li>
+                                <label for="msg">Mensaje:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li><button type="button">Enviar</button></li>
+                        </ul>
+                    </form>
 
 
                 </div>
