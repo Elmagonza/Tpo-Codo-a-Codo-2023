@@ -182,10 +182,6 @@ ul.menu {
     }
 }
 
-
-
-
-
 /*---Imagen Inicio---*/
 
 #img_inicio {
@@ -201,5 +197,32 @@ ul.menu {
     border-radius: 12px;
     margin: 1em;
     padding: 1em;
+}
+
+/* Estilo del footer */
+.footer
+{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 2em 5em 2em 3em;
+    background-color: black;
+    color: white;
+    height: auto; 
+
+}
+
+.extra{
+    display: flex;
+    row-gap: 1em;
+    font-size: 1em;
+    font-size: 5em;
+}
+.redes{
+    display: flex;
+    column-gap: 2em;
+    display: inline-block;
+    padding: 2em 0em 2em 3em;
+
 }
 
