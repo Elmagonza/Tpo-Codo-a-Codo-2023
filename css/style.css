@@ -15,7 +15,6 @@
     display: grid;
     grid-template-areas:
         "header"
-        "aside"
         "main"
         "footer";
 }
@@ -70,6 +69,38 @@ ul.menu {
 .fi-br-menu-burger,
 .fi-br-cross {
     display: none;
+}
+
+/*Sector del main*/
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 25em;
+    grid-template-rows: 1fr 25em 25em;
+    grid-template-areas: "section1 section1 section1"
+    "section2 section2 sidebar"
+    "section3 section3 sidebar"
+    ;
+    background-color: rgba(28, 141, 28, 0.958);
+
+
+}
+
+.section1{
+    grid-area: section1;
+    background-color: aqua;
+}
+.section2{
+    grid-area: section2;
+    background-color: blueviolet;
+}
+.section3{
+    grid-area: section3;
+    background-color: chartreuse;
+}
+.aside{
+    grid-area: sidebar;
+    background-color: coral;
 }
 
 /*Menu hamburguesa con media query*/
@@ -142,6 +173,7 @@ ul.menu {
     }
 
     .main{
+        grid-template-columns: 1fr;
         grid-template-areas:
         "section1"
         "section2"
@@ -151,35 +183,7 @@ ul.menu {
 }
 
 
-/*Sector del main*/
-.main {
-    grid-area: main;
-    display: grid;
-    grid-template-areas: "section1 section1 section1"
-    "section2 section2 sidebar"
-    "section3 section3 sidebar"
-    ;
-    background-color: rgba(192, 239, 192, 0.958);
 
-
-}
-
-.section1{
-    grid-area: section1;
-    background-color: aqua;
-}
-.section2{
-    grid-area: section2;
-    background-color: blueviolet;
-}
-.section3{
-    grid-area: section3;
-    background-color: chartreuse;
-}
-.aside{
-    grid-area: sidebar;
-    background-color: coral;
-}
 
 
 /*---Imagen Inicio---*/
