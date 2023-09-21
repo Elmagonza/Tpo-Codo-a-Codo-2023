@@ -164,6 +164,24 @@ ul.menu {
 
 }
 
+.section1{
+    grid-area: section1;
+    background-color: aqua;
+}
+.section2{
+    grid-area: section2;
+    background-color: blueviolet;
+}
+.section3{
+    grid-area: section3;
+    background-color: chartreuse;
+}
+.aside{
+    grid-area: sidebar;
+    background-color: coral;
+}
+
+
 /*---Imagen Inicio---*/
 
 #img_inicio {
