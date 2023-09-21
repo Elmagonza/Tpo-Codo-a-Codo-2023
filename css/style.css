@@ -1,79 +1,86 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contenedor-grid > *{
+.contenedor-grid>* {
     box-shadow: -1px 1px 7px 0px black;
     border-radius: 4px;
-   
+
 }
 
-.contenedor-grid{
+.contenedor-grid {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "aside"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
 }
 
 /*Nav bar */
-.header-grid{
+.header-grid {
     background-color: rgb(0, 0, 0);
     grid-area: header;
     padding: 1em;
 }
 
-.header-grid{
-    display:grid;
+.header-grid {
+    display: grid;
     grid-template-areas: "logo nav";
-    
+
 }
+
 /*Logo del nav*/
-#navbar-grid img{
+#navbar-grid img {
     grid-area: logo;
     width: 4.2em;
-    margin-left:1em;
-	
+    margin-left: 1em;
+
 }
 
 
 /*Menu*/
-ul.menu{
-    grid-area: nav ;
+ul.menu {
+    grid-area: nav;
     margin: 1.5em;
     text-align: right;
 }
-#navbar-grid ul.menu li{
+
+#navbar-grid ul.menu li {
     display: inline;
     font-size: 1.5em;
     align-content: right;
 }
-#navbar-grid ul.menu li a{ 
+
+#navbar-grid ul.menu li a {
     padding: 1em;
     color: #fff;
     text-decoration: none;
 }
 
-#navbar-grid ul.menu li a:hover{
-    background:red;
+#navbar-grid ul.menu li a:hover {
+    background: red;
     border-radius: 5px;
 }
 
-.checkbox, .fi-br-menu-burger, .fi-br-cross{
+.checkbox,
+.fi-br-menu-burger,
+.fi-br-cross {
     display: none;
 }
 
 /*Menu hamburguesa con media query*/
-@media only screen and (max-width:600px ){
-    .navbar{
+@media only screen and (max-width: 725px) {
+    .navbar {
         position: relative;
-        padding: 2em 3em ;
+        padding: 2em 3em;
     }
-    .checkbox, .icons{
+
+    .checkbox,
+    .icons {
         color: white;
         position: absolute;
         top: 3em;
@@ -83,24 +90,29 @@ ul.menu{
         height: 24px;
         cursor: pointer;
     }
-    .icons{
+
+    .icons {
         pointer-events: none;
-           
+
     }
-    .checkbox{
+
+    .checkbox {
         opacity: 0;
     }
-    .fi-br-cross{
+
+    .fi-br-cross {
         display: none;
     }
-    
-    .checkbox:checked ~ .fi-br-menu-burger{
+
+    .checkbox:checked~.fi-br-menu-burger {
         display: none;
     }
-    .checkbox:checked ~ .fi-br-cross{
+
+    .checkbox:checked~.fi-br-cross {
         display: block;
     }
-    .menu{
+
+    .menu {
         width: 20em;
         position: absolute;
         top: -160px;
@@ -109,23 +121,23 @@ ul.menu{
         display: none;
         transition: 250ms;
     }
-    
-    .menu li a{
+
+    .menu li a {
         text-decoration: none;
         color: inherit;
         background-color: #000000;
         display: block;
-        padding:1em 2em ;
+        padding: 1em 2em;
 
     }
-    
-    .checkbox:checked ~ .menu{
+
+    .checkbox:checked~.menu {
         display: block;
         z-index: 1;
         top: 4em;
     }
 
-    .menu li a:hover{
+    .menu li a:hover {
         background-color: red;
     }
 
@@ -140,7 +152,7 @@ ul.menu{
 
 
 /*Sector del main*/
-.main{
+.main {
     grid-area: main;
     display: grid;
     grid-template-areas: "section1 section1 section1"
@@ -148,41 +160,24 @@ ul.menu{
     "section3 section3 sidebar"
     ;
     background-color: rgba(192, 239, 192, 0.958);
-    
+
 
 }
+
 /*---Imagen Inicio---*/
 
-#img_inicio{
+#img_inicio {
     display: inline;
-    position:relative; 
-     
+    position: relative;
+
 }
 
 
 /*Cartel de presentacion*/
-.presentacion{
+.presentacion {
     background-color: aliceblue;
     border-radius: 12px;
     margin: 1em;
     padding: 1em;
 }
 
-/*Estilos para maquetar*/
-.section1{
-    grid-area: section1;
-}
-.section2{
-    background-color: yellow;
-    grid-area: section2;
-}
-
-.section3{
-    background-color: cadetblue;
-    grid-area: section3;
-}
-
-.aside{
-    background-color: aqua;
-    grid-area: sidebar;
-}
