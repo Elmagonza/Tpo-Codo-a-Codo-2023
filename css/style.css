@@ -68,7 +68,7 @@ ul.menu{
 }
 
 /*Menu hamburguesa con media query*/
-@media only screen and (max-width: 725px){
+@media only screen and (max-width:600px ){
     .navbar{
         position: relative;
         padding: 2em 3em ;
@@ -128,12 +128,25 @@ ul.menu{
     .menu li a:hover{
         background-color: red;
     }
+
+    .main{
+        grid-template-areas:
+        "section1"
+        "section2"
+        "section3"
+        "sidebar";
+    }
 }
 
 
 /*Sector del main*/
 .main{
     grid-area: main;
+    display: grid;
+    grid-template-areas: "section1 section1 section1"
+    "section2 section2 sidebar"
+    "section3 section3 sidebar"
+    ;
     background-color: rgba(192, 239, 192, 0.958);
     
 
@@ -155,3 +168,21 @@ ul.menu{
     padding: 1em;
 }
 
+/*Estilos para maquetar*/
+.section1{
+    grid-area: section1;
+}
+.section2{
+    background-color: yellow;
+    grid-area: section2;
+}
+
+.section3{
+    background-color: cadetblue;
+    grid-area: section3;
+}
+
+.aside{
+    background-color: aqua;
+    grid-area: sidebar;
+}
