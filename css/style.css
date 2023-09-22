@@ -89,6 +89,7 @@ ul.menu {
 .section1{
     grid-area: section1;
     background-color: aqua;
+    display: flex;
 }
 .section2{
     grid-area: section2;
@@ -197,6 +198,16 @@ ul.menu {
     border-radius: 12px;
     margin: 1em;
     padding: 1em;
+}
+
+/*pag nosotros*/
+.section1 .img-nosotros{
+    padding: 1em;
+    border: 1px solid red;
+}
+.section1 .img-nosotros img{
+    width: 50em;
+    
 }
 
 /* Estilo del footer */
