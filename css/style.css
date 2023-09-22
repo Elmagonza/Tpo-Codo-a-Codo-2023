@@ -5,12 +5,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contenedor-grid>* {
-    box-shadow: -1px 1px 7px 0px black;
-    border-radius: 4px;
-
-}
-
 .contenedor-grid {
     display: grid;
     grid-template-areas:
@@ -75,7 +69,7 @@ ul.menu {
 .main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr 25em;
+    grid-template-columns: 1fr 1fr 20em;
     grid-template-rows: 1fr 25em 25em;
     grid-template-areas: "section1 section1 section1"
     "section2 section2 sidebar"
@@ -89,7 +83,6 @@ ul.menu {
 .section1{
     grid-area: section1;
     background-color: aqua;
-    display: flex;
 }
 .section2{
     grid-area: section2;
@@ -174,7 +167,7 @@ ul.menu {
     }
 
     .main{
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-template-areas:
         "section1"
         "section2"
@@ -183,33 +176,54 @@ ul.menu {
     }
 }
 
-/*---Imagen Inicio---*/
+/*---Sector 1 de página index---*/
 
 #img_inicio {
     display: inline;
-    position: relative;
 
 }
 
-
-/*Cartel de presentacion*/
 .presentacion {
+    display: inline-block;
     background-color: aliceblue;
-    border-radius: 12px;
+    border-radius: 1em;
     margin: 1em;
     padding: 1em;
 }
 
-/*pag nosotros*/
-.section1 .img-nosotros{
-    padding: 1em;
-    border: 1px solid red;
-}
-.section1 .img-nosotros img{
-    width: 50em;
-    
+
+
+
+/* Sector 3 de página index */
+.section3 .sec3{
+    display: flex;
 }
 
+.section3 .sec3 .img-s3{
+    flex: 1;
+}
+.section3 .sec3 .img-s3 img{
+    width: 20em;
+    margin: 1em;
+}
+
+/*pag nosotros*/
+.section1 .img-nosotros{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.section1 .img-nosotros img{
+    width: 50em; 
+    
+}
+.section1 .img-nosotros .ser-scout{
+    background-color: aliceblue;
+    align-self:center;
+    padding: 1em;
+    margin-right: 2em;
+}
 /* Estilo del footer */
 .footer
 {
