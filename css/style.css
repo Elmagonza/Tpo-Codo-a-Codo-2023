@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;/*Linkear con google fonts *//*titulo: bebas neue *//*anton, helvetica condensed */
@@ -72,7 +72,8 @@ ul.menu {
     display: grid;
     grid-template-columns: 1fr 1fr 20em;
     grid-template-rows: 1fr 25em 25em;
-    grid-template-areas: "section1 section1 section1"
+    grid-template-areas: 
+    "section1 section1 section1"
     "section2 section2 sidebar"
     "section3 section3 sidebar"
     ;
@@ -99,14 +100,31 @@ ul.menu {
 }
 
 /*Menu hamburguesa con media query*/
-@media only screen and (max-width: 725px) {
-    .navbar {
-        position: relative;
-        padding: 2em 3em;
+@media only screen and (max-width: 430px) {
+    .contenedor-grid{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "section1"
+        "section2"
+        "section3"
+        "sidebar";
+    }
+    
+    #navbar-grid {
+        padding: 2em 2em;
     }
 
     .checkbox,
     .icons {
+        display: inline;
+        grid-area: nav ;
         color: white;
         position: absolute;
         top: 3em;
@@ -159,7 +177,7 @@ ul.menu {
 
     .checkbox:checked~.menu {
         display: block;
-        z-index: 1;
+        z-index: 2;
         top: 4em;
     }
 
@@ -167,14 +185,7 @@ ul.menu {
         background-color: red;
     }
 
-    .main{
-        grid-template-columns: auto;
-        grid-template-areas:
-        "section1"
-        "section2"
-        "section3"
-        "sidebar";
-    }
+   
 }
 
 /*---Sector 1 de página index---*/
