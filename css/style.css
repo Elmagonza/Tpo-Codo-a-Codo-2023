@@ -2,7 +2,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;/*Linkear con google fonts *//*titulo: bebas neue *//*anton, helvetica condensed */
+
 }
 
 .contenedor-grid {
@@ -54,8 +55,8 @@ ul.menu {
     text-decoration: none;
 }
 
-#navbar-grid ul.menu li a:hover {
-    background: red;
+#navbar-grid ul.menu li a:hover { /*60 30 10 relacion de colores*/
+    background: rgb(255, 0, 0);
     border-radius: 5px;
 }
 
@@ -65,7 +66,7 @@ ul.menu {
     display: none;
 }
 
-/*Sector del main*/
+/*Sector del main*/ /*Fuente Montserrat*/
 .main {
     grid-area: main;
     display: grid;
@@ -179,10 +180,13 @@ ul.menu {
 /*---Sector 1 de página index---*/
 
 #img_inicio {
-    display: inline;
+     width: 100%;    
 
 }
-
+#prueba{
+    width:100%;
+    border: 1px solid red;
+}
 .presentacion {
     display: inline-block;
     background-color: aliceblue;
