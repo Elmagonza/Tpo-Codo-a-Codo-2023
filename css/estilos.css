@@ -26,75 +26,51 @@ body{
 /*---NAVBAR---*/
 .header-grid {
     background-color: rgb(0, 0, 0);
+    min-height: 5em;
     grid-area: header;
-    display: grid;
-    grid-template-areas:
-    "logo orca"
-    ;
-    position: relative;
-    padding: 1em;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0em;
+} 
 /*Logo del nav*/
-.header-grid img {
-    grid-area: logo;
-    width: 6vw;
-    height: auto;
+.header-grid .logo {
+    display: flex;
+    align-items: center;
+    height: 4em;
+    width: auto;
     margin-left: 1em;
 }
 /* Menú del nav*/
-.menu-desplegable{
-    grid-area: orca ;
+.menu li{
+    display: inline-block;
+    text-decoration: none;  
+    padding: 1em 0em;
 }
-.checkbox,
-.icons {
-    color: white;
-    position: absolute;
-    top: 1.8em;
-    right: 3em;
-    display: inline;
-    width: 2em;
-    height: 2em; 
-    cursor: pointer;
-}
-.icons {
-    pointer-events:none;
-}
-.checkbox {
-    opacity: 0;
-}
-.fi-br-cross {
-    display: none;
-}
-.checkbox:checked~.fi-br-menu-burger {
-    display: none;
-}
-.checkbox:checked~.fi-br-cross {
-    display: block;
-}
-.menu {
-    width: 20em;
-    position: absolute;
-    top: -160px;
-    z-index: -1;
-    right: -20px;
-    display: none;
-    transition: 250ms;
-}
-.menu li a {
+.menu li a{
+    color: rgb(188, 182, 182);
     text-decoration: none;
-    color: white;
-    background-color: #000000;
-    padding: 1em 2em;
-}
-.checkbox:checked~.menu {
-    display: inline;
-    z-index: 2;
-    top: 10em;
-    text-decoration: none;
+    padding: 1em;
 }
 .menu li a:hover {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
+    border-radius: 4px;
 }
+
+/*--- MAIN---*/
+.main{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.section3 .sec3{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
 /*---FOOTER---*/
 .footer{
     display: flex;
@@ -120,9 +96,15 @@ body{
 }
 /*  mobile styles*/
 
+
 /* small tablet styles*/
-@media screen and (min-width: 620px){
-    
+@media screen and (min-width: 420px){
+    .header-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em;
+    } 
 }
 /*  large tablets*/
 @media screen and (min-width: 960px){
