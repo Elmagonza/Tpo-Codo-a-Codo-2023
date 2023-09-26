@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Grupo Scout Sagrado Corazón</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" sizes="32x32">
 </head>
@@ -15,10 +18,12 @@
     <div class="contenedor-grid">
         <header class="header-grid">
             <img src="img/logo.jpg" alt="logo" width="55em" > 
-            <nav id="navbar-grid">   
-                <input class="checkbox" type="checkbox">
-                <i class="icons fi fi-br-menu-burger"></i>
-                <i class="icons fi fi-br-cross"></i>
+            <nav class="navbar-grid"> 
+                <div class="menu-desplegable">
+                    <input class="checkbox" type="checkbox">
+                    <i class="icons fi fi-br-menu-burger"></i>
+                    <i class="icons fi fi-br-cross"></i> 
+                </div>  
                 <ul class="menu">
                     <li><a href="index.html" class="item">Inicio</a></li>
                     <li><a href="nosotros.html" class="item">Nosotros</a></li>
@@ -30,9 +35,9 @@
         
         <main class="main">    
             <section class="section1">
-                <div id="prueba">
-                    <img id="img_inicio" src="img/galeria/banner_1.jpg" alt="Imagen del grupo scout" width="50%">
-                    <div class="presentacion">
+                <div id="hero">
+                    <img id="img_inicio" src="img/galeria/banner_1.jpg" alt="Imagen del grupo scout" width="100%vw">
+                    <div class="mensaje_inicio">
                         <h1><b>"85 años ininterrumpidos de escultismo en el barrio de Barracas"</b></h1>
                         <a href="/nosotros.html"><button>¿Quienes somos?</button></a>
                     </div>
@@ -50,12 +55,12 @@
             <section class="section3">
                 <div class="sec3">
                     <div class="img-s3">
-                        <img src="img/galeria/chicos_piso.jpg" alt=""> 
+                        <img src="img/galeria/chicos_piso.jpg" alt="" width="25%"> 
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia incidunt ut soluta deserunt, mollitia voluptatibus voluptas quam, adipisci nulla laudantium eaque, explicabo cumque. Odit, quaerat aspernatur est ab veritatis eum quo, soluta sunt ducimus minus illo perspiciatis nostrum excepturi praesentium.</p>
                     <hr>
                     <div class="img-s3">
-                        <img src="img/galeria/fogon_grupo.jpg" alt=""> 
+                        <img src="img/galeria/fogon_grupo.jpg" alt=""width="25%"> 
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate veritatis ad in repellendus laborum recusandae excepturi odio totam neque assumenda natus, doloremque nam repudiandae quo unde animi iure atque ut architecto. Accusantium aliquid amet suscipit beatae quo, facilis optio.
                     </p>

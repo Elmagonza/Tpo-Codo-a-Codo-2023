@@ -1,0 +1,134 @@
+
+/*  variables  */
+
+/*  reset  */
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif; /*Titulos*/
+    list-style-type: none;
+} 
+
+/*  base styles  */
+body{
+    background-color: darkgreen;
+}
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+/*---NAVBAR---*/
+.header-grid {
+    background-color: rgb(0, 0, 0);
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+    "logo orca"
+    ;
+    position: relative;
+    padding: 1em;
+}
+/*Logo del nav*/
+.header-grid img {
+    grid-area: logo;
+    width: 6vw;
+    height: auto;
+    margin-left: 1em;
+}
+/* Menú del nav*/
+.menu-desplegable{
+    grid-area: orca ;
+}
+.checkbox,
+.icons {
+    color: white;
+    position: absolute;
+    top: 1.8em;
+    right: 3em;
+    display: inline;
+    width: 2em;
+    height: 2em; 
+    cursor: pointer;
+}
+.icons {
+    pointer-events:none;
+}
+.checkbox {
+    opacity: 0;
+}
+.fi-br-cross {
+    display: none;
+}
+.checkbox:checked~.fi-br-menu-burger {
+    display: none;
+}
+.checkbox:checked~.fi-br-cross {
+    display: block;
+}
+.menu {
+    width: 20em;
+    position: absolute;
+    top: -160px;
+    z-index: -1;
+    right: -20px;
+    display: none;
+    transition: 250ms;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    padding: 1em 2em;
+}
+.checkbox:checked~.menu {
+    display: inline;
+    z-index: 2;
+    top: 10em;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background-color: red;
+}
+/*---FOOTER---*/
+.footer{
+    display: flex;
+    justify-content:space-between ;
+    width: 100vw;
+    align-items: center;
+    padding: 2em 5em 2em 3em;
+    background-color: black;
+    color: white;
+    height: auto; 
+}
+.extra{
+   display: flex; 
+    row-gap: 1em;
+    font-size: 1em;
+    font-size: 5em;
+}
+.redes{
+    display: flex; 
+    column-gap: 2em;
+    display: inline-block;
+    padding: 2em 0em 2em 3em;
+}
+/*  mobile styles*/
+
+/* small tablet styles*/
+@media screen and (min-width: 620px){
+    
+}
+/*  large tablets*/
+@media screen and (min-width: 960px){
+    
+}
+/* desktop styles*/
+@media screen and (min-width: 1200px){
+    
+}

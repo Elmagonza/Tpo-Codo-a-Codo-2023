@@ -3,15 +3,16 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;/*Linkear con google fonts *//*titulo: bebas neue *//*anton, helvetica condensed */
-
 }
 
-.contenedor-grid {
+.contenedor-grid{
     display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw; 
     grid-template-areas:
-        "header"
-        "main"
-        "footer";
+    "header"
+    "main"
+    "footer";
 }
 
 /*Nav bar */
@@ -19,197 +20,201 @@
     background-color: rgb(0, 0, 0);
     grid-area: header;
     padding: 1em;
-}
-
-.header-grid {
-    display: grid;
-    grid-template-areas: "logo nav";
+    display: flex;
+    justify-content: space-between;
 
 }
 
 /*Logo del nav*/
 #navbar-grid img {
-    grid-area: logo;
     width: 4.2em;
     margin-left: 1em;
-
+    flex: 1;
 }
 
-
-/*Menu*/
-ul.menu {
-    grid-area: nav;
-    margin: 1.5em;
-    text-align: right;
-}
-
-#navbar-grid ul.menu li {
-    display: inline;
-    font-size: 1.5em;
-    align-content: right;
-}
-
-#navbar-grid ul.menu li a {
-    padding: 1em;
-    color: #fff;
-    text-decoration: none;
-}
-
-#navbar-grid ul.menu li a:hover { /*60 30 10 relacion de colores*/
-    background: rgb(255, 0, 0);
-    border-radius: 5px;
-}
+/*Menu mobile first*/
 
 .checkbox,
-.fi-br-menu-burger,
+.icons {
+    color: white;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    display: inline;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.icons {
+    pointer-events:none;
+
+}
+
+.checkbox {
+    opacity: 0;
+}
+
 .fi-br-cross {
     display: none;
 }
 
+.checkbox:checked~.fi-br-menu-burger {
+    display: none;
+}
+
+.checkbox:checked~.fi-br-cross {
+    display: block;
+}
+
+.menu {
+    width: 20em;
+    position: absolute;
+    top: -160px;
+    z-index: -1;
+    right: -20px;
+    display: inline-block;
+    transition: 250ms;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    display: block;
+    padding: 1em 2em;
+
+}
+
+.checkbox:checked~.menu {
+    display: block;
+    z-index: 2;
+    top: 4em;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: red;
+}
+
+
 /*Sector del main*/ /*Fuente Montserrat*/
-.main {
-    grid-area: main;
+.main{
     display: grid;
-    grid-template-columns: 1fr 1fr 20em;
-    grid-template-rows: 1fr 25em 25em;
-    grid-template-areas: 
-    "section1 section1 section1"
-    "section2 section2 sidebar"
-    "section3 section3 sidebar"
-    ;
     background-color: rgba(28, 141, 28, 0.958);
-
-
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 10em;
+    grid-template-areas:
+    "section1"
+    "section2"
+    "section3"
+    "sidebar"
+    ;
 }
 
 .section1{
     grid-area: section1;
     background-color: aqua;
+
+
 }
 .section2{
     grid-area: section2;
     background-color: blueviolet;
+    width: 100vw;
+   
 }
 .section3{
     grid-area: section3;
+    width: 100vw;
     background-color: chartreuse;
+     
 }
 .aside{
     grid-area: sidebar;
     background-color: coral;
+    width: 100vw;
 }
 
-/*Menu hamburguesa con media query*/
-@media only screen and (max-width: 430px) {
-    .contenedor-grid{
-        grid-template-columns: auto;
-        grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    }
-    .main{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "section1"
-        "section2"
-        "section3"
-        "sidebar";
-    }
-    
-    #navbar-grid {
-        padding: 2em 2em;
-    }
 
-    .checkbox,
-    .icons {
-        display: inline;
-        grid-area: nav ;
-        color: white;
-        position: absolute;
-        top: 3em;
-        right: 3em;
-        display: block;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-    }
-
-    .icons {
-        pointer-events: none;
-
-    }
-
-    .checkbox {
-        opacity: 0;
-    }
-
-    .fi-br-cross {
-        display: none;
-    }
-
-    .checkbox:checked~.fi-br-menu-burger {
-        display: none;
-    }
-
-    .checkbox:checked~.fi-br-cross {
-        display: block;
-    }
-
-    .menu {
-        width: 20em;
-        position: absolute;
-        top: -160px;
-        z-index: -1;
-        right: -20px;
-        display: none;
-        transition: 250ms;
-    }
-
-    .menu li a {
-        text-decoration: none;
-        color: inherit;
-        background-color: #000000;
-        display: block;
-        padding: 1em 2em;
-
-    }
-
-    .checkbox:checked~.menu {
-        display: block;
-        z-index: 2;
-        top: 4em;
-    }
-
-    .menu li a:hover {
-        background-color: red;
-    }
-
-   
-}
 
 /*---Sector 1 de página index---*/
 
-#img_inicio {
-    width: 100%;    
-    display:block;
+.section1 #prueba{
+    display: block;
     position: relative;
+    width: 100vw;
+}
+#img_inicio {
+    width: 100%;
+    height: auto;   
+    display:block;
     z-index: 0;
 }
 
 .presentacion {
-    display: inline;
-    position:absolute;
-    z-index: 1;
+    /* display: inline;
+    position:absolute; */
+    /* z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     background-color: aliceblue;
     border-radius: 1em;
-    margin: 1em;
+    /* margin: 1em; */
     padding: 1em;
-    text-align: center;
+    text-align:initial;
 }
+/*Menu hamburguesa con media query*/
+@media only screen and (min-width: 430px) {
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr  10em;
+        grid-template-rows: 1fr 25em 25em;
+        grid-template-areas: 
+        "section1  section1"
+        "section2  sidebar"
+        "section3  sidebar"
+        ;
+        
+    }
+    .checkbox,
+    .fi-br-menu-burger,
+    .fi-br-cross {
+        display: none;
+    }
+    .menu {
+        display: inline;
+        margin: 1.5em;
+        text-align: right;
+    }
+    
+    #navbar-grid ul.menu li {
+        
+        font-size: 1.5em;
+        align-content: right;
+    }
+    
+    #navbar-grid ul.menu li a {
+        padding: 1em;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #navbar-grid ul.menu li a:hover { /*60 30 10 relacion de colores*/
+        background: rgb(255, 0, 0);
+        border-radius: 5px;
+    }
+    
+    
+}
+
+
+
+
+
+
 
 
 
@@ -217,14 +222,20 @@ ul.menu {
 /* Sector 3 de página index */
 .section3 .sec3{
     display: flex;
+    flex-direction: column;
 }
 
 .section3 .sec3 .img-s3{
     flex: 1;
 }
+
 .section3 .sec3 .img-s3 img{
     width: 20em;
     margin: 1em;
+}
+.section3 .sec3 p{
+    display: inline;
+    
 }
 
 /*pag nosotros*/
@@ -245,10 +256,10 @@ ul.menu {
     margin-right: 2em;
 }
 /* Estilo del footer */
-.footer
-{
+.footer{
     display: flex;
     justify-content:space-between ;
+    width: 100vw;
     align-items: center;
     padding: 2em 5em 2em 3em;
     background-color: black;
@@ -258,13 +269,13 @@ ul.menu {
 }
 
 .extra{
-    display: flex;
+   display: flex; 
     row-gap: 1em;
     font-size: 1em;
     font-size: 5em;
 }
 .redes{
-    display: flex;
+    display: flex; 
     column-gap: 2em;
     display: inline-block;
     padding: 2em 0em 2em 3em;
