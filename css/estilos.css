@@ -12,7 +12,7 @@
 
 /*  base styles  */
 body{
-    background-color: darkgreen;
+    background-color:#24B44C;
 }
 .contenedor-grid{
     display: grid;
@@ -53,7 +53,7 @@ body{
     padding: 1em;
 }
 .menu li a:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: #DF293B;
     border-radius: 4px;
 }
 
@@ -78,8 +78,8 @@ body{
     width: 100vw;
     align-items: center;
     padding: 2em 5em 2em 3em;
-    background-color: black;
-    color: white;
+    background-color: #040404;
+    color: #7C7C7C;
     height: auto; 
 }
 .extra{
@@ -114,3 +114,45 @@ body{
 @media screen and (min-width: 1200px){
     
 }
+.contacto{
+    
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-around;
+
+    
+    
+
+}
+
+.contacto div {
+    /* background-color: #7C7C7C; */
+    padding: 1em;
+    border:2px solid rgb(231, 7, 7);
+    margin: 2em;
+    
+}
+
+
+#info{
+    height: 9em;
+
+}
+.section2{
+    display: flex;
+    justify-content:start;
+ 
+
+}
+
+.section2 div{
+    /* background-color: #7C7C7C; */
+    padding: 1em;
+    border:2px solid rgb(231, 7, 7);
+    margin: 1em;
+   
+}
+
+
