@@ -140,19 +140,51 @@ body{
     height: 10em;
 
 }
+/* formulario */
+
 .section2{
     display: flex;
-    justify-content:start;
- 
-
+    width: auto; 
+    height: auto;
+    /* margin: 80px auto; */
+    padding: 25px;
+   justify-content: center;
 }
 
-.section2 div{
+.form{
     /* background-color: #7C7C7C; */
-    padding: 1em;
-    border:2px solid rgb(231, 7, 7);
-    margin: 1em;
-   
+    padding: 2em;
+    border: 3px solid rgb(35, 32, 32);
+    margin: 1em; 
+    border-radius: 10px;  
+    padding:auto;  
+    background-color: #fbfbfb;    
 }
-
-
+input, select{
+    background-color: #daaeb2;
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;
+    border-color: #000000;
+}
+textarea{
+    width: 405px; 
+    height: 150px; 
+    border-radius: 8px;  
+    border-color: #894c52;
+    background-color: rgb(255, 255, 255);
+}
+button{
+    height: 45px; 
+    padding: 0 5px 0 5px ;  
+    margin: 10px 0 20px 0 ;
+    text-transform: uppercase;
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+    background-color: rgb(244, 177, 177);
+}
+  label{
+    display: block; 
+    float: center;  
+  }
