@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;/*Linkear con google fonts *//*titulo: bebas neue *//*anton, helvetica condensed */
-
+    list-style-type: none;
 }
 
 .contenedor-grid {
@@ -200,18 +200,27 @@ ul.menu {
 .presentacion {
     display: inline;
     position:absolute;
-    z-index: 1;
+    z-index: 1px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: aliceblue;
+    background-color: rgba(203, 206, 203, 0.651);
     border-radius: 1em;
     margin: 1em;
     padding: 1em;
     text-align: center;
+    height: auto;
+    width: 90%;
+    font-size: 35px;
 }
 
+button{
+    width: 20%;
+    padding: 1em;
+    opacity: 80%;
+    border-radius: 1em;
 
+}
 
 
 /* Sector 3 de página index */
