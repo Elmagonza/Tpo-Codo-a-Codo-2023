@@ -4,7 +4,7 @@
 /*  reset  */
 * {
     box-sizing:border-box;
-    padding: 2px;
+    padding: 0px;
     margin: 0;
     font-family: 'Bebas Neue', sans-serif; /*Titulos*/
     list-style-type: none;
