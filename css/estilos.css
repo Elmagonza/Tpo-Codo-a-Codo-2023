@@ -163,7 +163,7 @@ background-position: center ;
 .ser-scout{
     background-color: #108e19;
     background-image: linear-gradient(180deg, #108e19 0%, #e1a497 100%);
-    
+    padding: 1em;
 
 
 
@@ -175,13 +175,13 @@ background-position: center ;
     flex-direction: column;
     width: auto; 
     height: auto;
-    margin: 20px 80px;
-    padding: 30px 30px;
+    margin: 1.25em 4.9em;
+    padding: 2em 2em;
    /* justify-content:flex-start; */
 }
 .manada,.unidad,.caminantes,.rovers {
-    padding: 10px;
-    line-gap-override: 10px;
+    padding: 0.625em;
+    line-gap-override: 0.625em;
 
 }
 
@@ -198,7 +198,7 @@ background-position: center ;
     padding: 2em;
     border: 3px solid rgb(35, 32, 32);
     margin: 1em; 
-    border-radius: 10px;  
+    border-radius: 0.625em;  
     padding:auto;  
     background-color: #fbfbfb;    
 }
@@ -216,13 +216,13 @@ textarea{
     border-color: #894c52;
     background-color: rgb(255, 255, 255);
 }
-button{
-    height: 45px; 
-    padding: 0 5px 0 5px ;  
-    margin: 10px 0 20px 0 ;
+.boton-nosotros{
+    height: 3em; 
+    padding: 0 0.4em 0 0.4em ;  
+    margin: 0.625em 0 1.25em 0 ;
     text-transform: uppercase;
-    border-radius: 10px;  
-    width: 420px;   
+    border-radius: 1px;  
+    width: 100%;   
     cursor: pointer;
     background-color: rgb(244, 177, 177);
 }
