@@ -152,7 +152,7 @@ background-position: center ;
     height: auto;
 }
 #maps iframe{
-    width: auto;
+    width: 100%;
 }
 
 #nosotros{
