@@ -99,6 +99,19 @@ background-position: center ;
     text-align: center;
 }
 
+/*---Pagina Inicio----*/
+#hero{
+    width: auto;
+}
+.mensaje-inicio{
+    padding: 1em;
+    margin-top: 0;
+    background-color: rgba(0, 0,0,0.6 );
+    color:#BCB6B6;
+}
+#img-inicio{
+    width: 100%;
+}
 
 /*---FOOTER---*/
 .footer{
