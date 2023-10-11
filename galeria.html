@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Grupo Scout Sagrado Corazón</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lora:ital,wght@1,600&family=Neuton:ital@1&display=swap"
-        rel="stylesheet">
-        
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <title>Grupo Scout Sagrado Corazón</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" sizes="32x32">
 </head>
 
@@ -39,10 +37,82 @@
             </section>
             
             <section class="section2">
-                <div>
-                    <img src="img/galeria/diris_casilla.jpg" alt="" width="50%">
-                    <h2>subtitulo de imagen</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur, veniam, minima id optio nemo possimus quis harum vitae suscipit non reprehenderit! Laudantium in saepe inventore iure fuga. Harum, sapiente labore? Consequatur aliquam eaque fugit?</p>
+                <div class="carrousel">
+                    <div class="conteCarrousel">
+                        <div class="itemCarrousel" id="itemCarrousel-1">
+                            <div class="itemCarrouselTarjeta">                            
+                                <img src="img/galeria/bandera.jpg" alt="item1" width="25%"> 
+                            </div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-3">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-2">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemCarrousel" id="itemCarrousel-2">
+                            <div class="itemCarrouselTarjeta">
+                                <img src="img/galeria/chicos_sentados_piltri.jpg" alt=""width="25%">
+                            </div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-3">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemCarrousel" id="itemCarrousel-3">
+                            <div class="itemCarrouselTarjeta">
+                                <img class="logo" src="img/galeria/diris_casilla.jpg" alt="logo" width="25%">
+                            </div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-2">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-1">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemCarrousel" id="itemCarrousel-4">
+                            <div class="itemCarrouselTarjeta">
+                                <img class="logo" src="img/galeria/pared_museo.jpg" alt="logo" width="25%">
+                            </div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-2">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-1">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="itemCarrousel" id="itemCarrousel-5">
+                            <div class="itemCarrouselTarjeta">
+                                <img class="logo" src="img/galeria/arce.jpg" alt="logo" width="25%">
+                            </div>
+                            <div class="itemCarrouselArrows">
+                                <a href="#itemCarrousel-2">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#itemCarrousel-1">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="conteCarrouselController">
+                            <a href="#itemCarrousel-1">•</a>
+                            <a href="#itemCarrousel-2">•</a>
+                            <a href="#itemCarrousel-3">•</a>
+                            <a href="#itemCarrousel-4">•</a>
+                            <a href="#itemCarrousel-5">•</a>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
             
@@ -58,6 +128,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem asperiores nihil quaerat corporis tenetur laudantium natus iure at maxime amet, eveniet facere quibusdam exercitationem molestias ab illo, ipsa, ex sint distinctio inventore reprehenderit consectetur! Voluptatibus at ipsam sunt! Sed molestiae rerum corrupti autem nobis?</p>
                 </div>
             </section>
+
+     
         </main>    
         <footer class="footer">
             <div>
