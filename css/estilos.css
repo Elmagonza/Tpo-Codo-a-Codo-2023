@@ -172,49 +172,68 @@ background-position: center ;
 }
 
 /*---FOOTER---*/
-.footer{
-    display: flex;
-    justify-content:center ;
-    width: 100vw;
-    align-items: flex-start;
-    padding: 2em 3em 2em 3em;
+.pie{
+    width: 100%;
     background-color: #040404;
-    color: #7C7C7C;
-    height: auto; 
+    color: #7c7c7c;
+    /* max-width:2500em; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 2em 0em;
 }
-.extra{
-   display: flex; 
-    row-gap: 1em;
-    font-size: 1em;
-    font-size: 5em;
+.pie .box h2{
+    margin-bottom: 20px;
+    font-size: 20px;
 }
-.redes{
-    display: flex; 
-    column-gap: 2em;
+.pie .box .esc {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+}
+.pie .box .info {
+    width: 100%;
+    /* height: 100%; */
+    display: inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie .box a{
     display: inline-block;
-    padding: 2em 0em 2em 3em;
+    width: 40px;
+    height: 40px;
+    line-height: 47px;
+    text-align: center;
+    border-radius: 20px;
+    background-color:#7c7c7c;
+    margin-right: 1em;
+    transition: all 300ms ease;
 }
-
-
-
-
-.contacto{
-    
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-    justify-content: space-around;
+.pie .box .redes-soc {
+    text-align: center;
 }
+.pie .box a:hover{
+    background-color: #df293b;
 
-.contacto #info {
-    /* background-color: #7C7C7C; */
+}
+.pie .grupo2{
+ background-color: #282828;
+ padding: 15px 10px;
+ text-align: center;
+ color: #696969;
+ display: grid;
+}
+/* .contacto #info {
+
     padding: 1em;
-    border:2px solid rgb(231, 7, 7);
+    border: 15px solid rgb(231, 7, 7);
     margin: 1.2em;
     height: 10em;
-    width: 96%;
-}
+    width: 96%;*/
 
 
 #maps{
@@ -374,10 +393,19 @@ textarea{
         height: 80vh;
         background-position: center;
     }
+   
+
 }
 /*  large tablets*/
-@media screen and (min-width: 960px){
-    
+@media screen and (max-width: 960px){
+     .pie{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        padding: 1em 0em;
+    }
+
 }
 /* desktop styles*/
 @media screen and (min-width: 1200px){
