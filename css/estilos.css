@@ -79,12 +79,12 @@ background-position: center ;
     border-radius: 4px;
 }
 
+
 /*--- MAIN---*/
 .main{
     grid-area: main;
     display:grid;
     grid-template-columns: 1fr; 
-    
 }
 .section2{
     display: flex;
@@ -95,8 +95,6 @@ background-position: center ;
     flex-wrap: wrap;
     align-content: center;
     flex-direction: column;  
-    border: 3px solid rgb(38, 177, 231);
-
 }
 
 .section3 .sec3{
@@ -104,8 +102,8 @@ background-position: center ;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    border: 3px solid black;
+    grid-template-rows: 1fr 1fr; 
+
 }
 #section3nosotros {
     padding: 1em;
@@ -115,39 +113,115 @@ background-position: center ;
 }
 
 /*---Pagina Inicio----*/
+/* 1 */
+.section1{
+    display: grid;
+    grid-template-rows: 3fr;
+    justify-content: center;
+    background-color: #2190f1;
+    padding: 1em;
+
+}
+
 #hero{
     width:auto;
-    position:relative;
+    position:center;
     height:60vh;
     background-image:url(img/galeria/banner_1.jpg);
-    background-position-x:40%;
-    background-position-y:93%;
+    background-position-x:50%;
+    background-position-y:50%; 
+    
 }
  
 .mensaje-inicio{
-    position:absolute;
-    top:20%;
-    padding:1em;
-    margin-left:1em;
-    width:15em;
-    height:21em;
+    position:relative;
+
+    /* top:20%; */
+    /* padding:1em;
+    margin-left:1em; */
+    width:100%;
+    /* max-width:300px; */
+    height:100%;
+    /* min-height:220px; */
     background:rgba(54, 54, 54, 0.757);
     backdrop-filter: blur(3px);
-    border: 1px solid rgba(255,255,255,0.25);
+    border: 4px solid #4e4d4d82;
     color:#282828;
     display:flex;
     flex-direction:column;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items:center;
+    border-radius: 1em;
 }
 .mensaje-inicio h1{
     color: rgb(188, 182, 182);
     padding: 0.4em;
+    text-align: center;
+    font-size: 2em;
 }
 .mensaje-inicio .boton-nosotros{
     padding: 0.7em;
     border-radius: 5px;
 }
+
+.mensaje-inicio .boton-nosotros:hover {
+   background-color: #eb4455;
+}
+/* 2 */
+
+.section2-{
+    display: flex;
+    flex-direction: column;
+    width:auto; 
+    height: auto;
+    /* padding: 2em 0em;  */
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    border: 3px solid black;  
+}
+
+.section3 .sec3-{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    border: 3px solid black;  
+
+}
+
+.alentador{
+    background-color: #3c9114;
+    height:25vh;
+    padding: 2em;
+    color:rgb(242, 242, 242);
+}
+.alentador h2 a{
+    color:rgb(242, 242, 242);
+    
+}
+.sec3 .img-s3 img{
+    width: 12em;
+    padding: 0.5em;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.sec3 .img-s3 img:hover{
+    transform: scale(1.2);
+}
+.conocenos{
+    background-color: red;
+    padding: 1em 0em;
+}
+.conocenos .boton-conocenos{
+    display: inline;
+    margin-left: 33%;
+    padding: 0.5em;
+}
+
 
 /*---FOOTER---*/
 .pie{
@@ -326,15 +400,7 @@ textarea{
     .itemCarrouselArrows > i:hover {
         cursor: pointer;
     }
-    #itemCarrousel-1{
-        /* background-color: rgb(226, 50, 50); */
-    }
-    #itemCarrousel-2{
-        /* background-color: rgb(50, 200, 226); */
-    }
-    #itemCarrousel-3{
-        /* background-color: rgb(200, 226, 50); */
-    }
+
     .conteCarrouselController{
         width: 100%;
         display: flex;
@@ -389,3 +455,5 @@ textarea{
        grid-column: 1/2;
        }
 }
+
+/* Pagina de inicio */
