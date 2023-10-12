@@ -177,7 +177,6 @@ background-position: center ;
     background-color: #040404;
     color: #7c7c7c;
     margin:auto;
-    border:3px solid #7c7c7c;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
