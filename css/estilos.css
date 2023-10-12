@@ -202,32 +202,51 @@ background-position: center ;
 }
 
 /* 3 */
-.section3 .sec3-{
-    text-align: center;
+.section3-{
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    border: 3px solid black;  
+    grid-template-rows: repeat(2, 1fr);
+}
 
+ .sec3{
+    text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0em 1em;
+    border: 2px solid #282828;  
+
+}
+
+.section3-, p{
+    /* border: 6px solid rgb(62, 6, 6);  */
+    display: flex;
+    flex-direction: row; 
+    text-align: center;
+    padding: 1em
+    
 }
 
 
 .sec3 .img-s3 img{
     width: 12em;
     padding: 0.5em;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     overflow: hidden;
     transition: 0.5s;
     object-fit: cover;
+    /* border: 6px solid rgb(63, 103, 204);   */
+
 }
 .sec3 .img-s3 img:hover{
     transform: scale(1.2);
 }
 
+/* 4 */
+
 .conocenos{
     background-color: red;
+    border: 6px solid rgb(75, 2, 70);  
     padding: 1em 0em;
+
 }
 .conocenos .boton-conocenos{
     display: inline;
@@ -235,7 +254,7 @@ background-position: center ;
     padding: 0.5em;
 }
 
-/* 4 */
+/* 5 */
 
 
 /*---FOOTER---*/
@@ -293,7 +312,7 @@ background-position: center ;
  text-align: center;
  color: #696969;
  display: grid;
-grid-column: 1/4;
+ grid-column: 1/4;
 }
 /*  */
 #maps{
