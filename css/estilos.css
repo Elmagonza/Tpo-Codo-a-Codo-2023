@@ -160,8 +160,11 @@ background-position: center ;
     font-size: 2em;
 }
 .mensaje-inicio .boton-nosotros{
+    height: 3em;
+    width: 13em;
     padding: 0.7em;
     border-radius: 5px;
+    font-size: 1em;
 }
 
 .mensaje-inicio .boton-nosotros:hover {
