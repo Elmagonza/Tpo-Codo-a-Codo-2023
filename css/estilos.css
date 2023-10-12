@@ -176,12 +176,12 @@ background-position: center ;
     width: 100%;
     background-color: #040404;
     color: #7c7c7c;
-    /* max-width:2500em; */
-    margin: auto;
+    margin:auto;
+    border:3px solid #7c7c7c;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
-    padding: 2em 0em;
+    padding: 1em 0em 0em;
 }
 .pie .box h2{
     margin-bottom: 20px;
@@ -191,6 +191,7 @@ background-position: center ;
     width: 100%;
     font-size: 13px;
     text-align: center;
+    margin-top: 2em;
 }
 .pie .box .info {
     width: 100%;
@@ -220,22 +221,15 @@ background-position: center ;
     background-color: #df293b;
 
 }
-.pie .grupo2{
+.grupo2 {
  background-color: #282828;
- padding: 15px 10px;
+ padding: 10px 5px;
  text-align: center;
  color: #696969;
  display: grid;
+grid-column: 1/4;
 }
-/* .contacto #info {
-
-    padding: 1em;
-    border: 15px solid rgb(231, 7, 7);
-    margin: 1.2em;
-    height: 10em;
-    width: 96%;*/
-
-
+/*  */
 #maps{
     margin: 2em;
     width: 96%;
@@ -398,16 +392,23 @@ textarea{
 }
 /*  large tablets*/
 @media screen and (max-width: 960px){
-     .pie{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1em;
-        padding: 1em 0em;
-    }
 
 }
 /* desktop styles*/
 @media screen and (min-width: 1200px){
-    
+}
+
+/* tamaño estandar de celular*/
+@media screen and (max-width: 490px){
+    .pie{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        padding: 1em 0em 0em;
+    }
+    .grupo2 {
+        display: grid;
+       grid-column: 1/2;
+       }
 }
