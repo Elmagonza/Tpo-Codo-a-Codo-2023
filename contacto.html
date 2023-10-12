@@ -66,7 +66,7 @@
                                             placeholder="escribe tu nombre" size="20em" 
                                             pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
 
-
+<br>
                                             <input type="email" name="email" placeholder="escribe tu email"
                                             title="email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" 
                                             required>
@@ -84,13 +84,19 @@
                                            
                                            <label for="msg">Mensaje:</label>
                                            <textarea id="msg" name="user_message" 
-                                           cols="50em" rows="5em" placeholder=" Escriba aqui sus comentarios..."></textarea>                 
+                                           cols="50em" rows="5em" 
+                                           placeholder=" Escriba aqui sus comentarios..."
+                                            data-parttern="^.{1,100}$" required title="no debes excederte de 100 caracteres">
+                                        </textarea>                 
                                        <br>
 
 
 
 
                                             <input type= "submit" value="enviar">
+                                            <div class="contact-form-response none">
+                                                <p>los datos fueron enviados correctamente</p>
+                                            </div>
 
 
 
