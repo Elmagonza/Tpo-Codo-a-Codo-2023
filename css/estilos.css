@@ -368,15 +368,9 @@ background-position: center ;
  display: grid;
  grid-column: 1/4;
 }
+
 /*  */
-#maps{
-    margin: 2em;
-    width: 96%;
-    height: auto;
-}
-#maps iframe{
-    width: 100%;
-}
+
 
 #nosotros{
     color: white;
@@ -399,8 +393,54 @@ background-position: center ;
     line-gap-override: 1em;
 }
 
+/* pag de contacto */
+/* 1 */
+.con-sec-1{
+    border: 2px solid goldenrod;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2em;
+    
+}
+.infor{
+    border: 3px solid rgb(85, 85, 86);
+    padding: 1em;
+    height: max-content;
+    width: max-content;
+    margin: 2em 1em;
+    background-color: rgba(172, 158, 158, 0.982) ;
+
+}
+.infor ul{
+    padding-left: 2em;
+}
+.maps{
+    border: 2px solid rgb(218, 32, 128);
+    margin: 2em 1em;
+    width: 96%;
+    height: auto;
+}
+.maps iframe{
+
+    width: 100%;
+}
+
+/* 2 */
+.con-sec-2{
+    border: 2px solid rgb(112, 42, 144);
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    
+}
+
+
+#lo{
+    border: 2px solid rgb(157, 109, 5);
+
+
+}
 /* --FORMULARIO-- */
-.form{
+.formu{
     padding: 1.2em;
     width: 23em;
     border: 3px solid rgb(35, 32, 32);
