@@ -165,6 +165,8 @@ background-position: center ;
     padding: 0.7em;
     border-radius: 5px;
     font-size: 1em;
+    cursor: pointer;
+
 }
 
 .mensaje-inicio .boton-nosotros:hover {
@@ -274,6 +276,7 @@ background-position: center ;
 .aside{
     /* border: 3px solid rgb(13, 219, 212) ; */
     padding: 1em;
+    margin-bottom: 23em;
 }
 .aside h2{
     border: 3px solid #696969 ;
@@ -300,6 +303,7 @@ background-position: center ;
 #uno{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    /* border: 3px solid rgb(182, 225, 27) ; */
 
 }
 
@@ -396,7 +400,7 @@ background-position: center ;
 /* pag de contacto */
 /* 1 */
 .con-sec-1{
-    border: 2px solid goldenrod;
+    /* border: 2px solid goldenrod; */
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2em;
@@ -408,14 +412,14 @@ background-position: center ;
     height: max-content;
     width: max-content;
     margin: 2em 1em;
-    background-color: rgba(172, 158, 158, 0.982) ;
+    background-color: rgba(172, 158, 158, 0.982);
 
 }
 .infor ul{
     padding-left: 2em;
 }
 .maps{
-    border: 2px solid rgb(218, 32, 128);
+    /* border: 2px solid rgb(218, 32, 128); */
     margin: 2em 1em;
     width: 96%;
     height: auto;
@@ -427,56 +431,70 @@ background-position: center ;
 
 /* 2 */
 .con-sec-2{
-    border: 2px solid rgb(112, 42, 144);
+    /* border: 2px solid rgb(112, 42, 144); */
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
+    margin-bottom: 6em;
     
 }
-
-
-#lo{
-    border: 2px solid rgb(157, 109, 5);
-
-
+#caja-form{
+    /* border: 2px solid rgb(157, 109, 5); */
+    padding: 9em 2em 2em 1em;
 }
+
 /* --FORMULARIO-- */
 .formu{
-    padding: 1.2em;
-    width: 23em;
-    border: 3px solid rgb(35, 32, 32);
+    padding: 2em;
+    width: auto;
+    border: 3px solid rgb(72, 60, 60);
     /* margin: 1em;  */
-    border-radius: 0.625em;  
+    border-radius: 1em;  
     padding:auto;  
-    background-color: #fbfbfb;    
+    background-color: #e0dfdf;    
 }
 input, select{
-    background-color: #daaeb2;
-    width: 90%; 
+    background-color: #aaa9a9;
+    width:95%;
     height: 2em; 
     border-radius: 5px;
-    border-color: #000000;
+    /* border-color: #262323; */
+
 }
 textarea{
-    width: 90%; 
-    height: 9.4em; 
+    width: 100%; 
+    height: 9em; 
     border-radius: 8px;  
     border-color: #894c52;
     background-color: rgb(255, 255, 255);
+    margin-top: 2%;
 }
 .boton-contacto{
-    height: 2em; 
-    padding: 0 0.4em 0 0.4em ;  
-    margin: 0.625em 0 1.25em 0 ;
+    height: 3em; 
+    /* padding: 0 0.4em em ;   */
+    margin-top: 1em;
     text-transform: uppercase;
     border-radius: 5px;  
-    width: 90%;   
+    width: 100%;   
     cursor: pointer;
-    background-color: rgb(244, 177, 177);
+    font-size: 1em;
+    background-color: rgb(175, 170, 170);
 }
-  label{
-    display: block; 
-    float: center;  
-  }
+ #caja{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+ .hi{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr) ;
+    
+}
+label{
+    /* border:2px solid #108e19; */
+    margin-bottom: 3%;
+    margin-top: 3%;
+    
+}
 
   /* Contenedor de imag. en carrusel */
   .contenedor1{
@@ -583,5 +601,3 @@ textarea{
        grid-column: 1/2;
        }
 }
-
-/* Pagina de inicio */
