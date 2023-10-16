@@ -21,7 +21,8 @@ background-image: url("/img/galeria/uniformados.jpg");
 background-size:cover; /* Ajusta la imagen para cubrir toda la página */
 background-repeat: no-repeat; /* Evita que la imagen se repita */
 background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el desplazamiento de la página */
-background-position: center ;    
+background-position: center ; 
+   
 }
 
 .contenedor-grid{
@@ -364,5 +365,130 @@ textarea{
 }
 /* desktop styles*/
 @media screen and (min-width: 1200px){
+    
+}
+.contacto{
+    
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-around;
+
+    
+    
+
+}
+
+.contacto div {
+    /* background-color: #7C7C7C; */
+    padding: 1em;
+    border:2px solid rgb(231, 7, 7);
+    margin: 2em;
+    
+}
+
+
+#info{
+    height: 10em;
+
+}
+/* formulario */
+#nosotros{
+    color: white;
+    text-align:center;
+}
+.ser-scout{
+    background-color: #108e19;
+    background-image: linear-gradient(180deg, #108e19 0%, #e1a497 100%);
+    
+
+
+
+}
+.section2{
+    background-color: #108e19;
+    background-image: linear-gradient(180deg, #108e19 0%, #e1a497 100%);
+    display: flex;
+    flex-direction: column;
+    width: auto; 
+    height: auto;
+    margin: 20px 80px;
+    padding: 30px 30px;
+   /* justify-content:flex-start; */
+}
+.manada,.unidad,.caminantes,.rovers {
+    padding: 10px;
+    line-gap-override: 10px;
+
+}
+
+#section3nosotros {
+    padding: 1em;
+    color:#ee6c77;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    background:rgba(139, 132, 132, 0.757);
+    backdrop-filter: blur(3px);
+
+}
+
+.form{
+    /* background-color: #7C7C7C; */
+    padding: 2em;
+    border: 3px solid rgb(35, 32, 32);
+    margin: 1em; 
+    border-radius: 10px;  
+    padding:auto;  
+    background-color: #fbfbfb;    
+}
+input, select{
+    background-color: #daaeb2;
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;
+    border-color: #000000;
+}
+textarea{
+    width: 405px; 
+    height: 150px; 
+    border-radius: 8px;  
+    border-color: #894c52;
+    background-color: rgb(255, 255, 255);
+}
+button{
+    height: 45px; 
+    padding: 0 5px 0 5px ;  
+    margin: 10px 0 20px 0 ;
+    text-transform: uppercase;
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+    background-color: rgb(244, 177, 177);
+}
+  label{
+    display: block; 
+    float: center;  
+  }
+
+  /* Contenedor de imag. en carrusel */
+.cont-img{
+    display: flex;
+    justify-content: center;
+}
+.slider{
+    display: flex;
+    /* width: auto; */
+    width: 40em;
+    aspect-ratio: 16/9;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    
+}
+.slider img{
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
     
 }
