@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Grupo Scout Sagrado Corazón</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" sizes="32x32">
+<script src="./formulario.js"></script>
+
 </head>
 
 <body id="bodycontacto">
@@ -43,34 +46,62 @@
                 <div class="form"> 
                                 <h2>Contactenos</h2>
                                 <h3>Escríbenos y nos pondremos en contacto contigo</h3>
+                              
                                 <br>
-                                <form action="https://formspree.io/f/mzblgbje" method="post">
+                                <form class="contact-form"  target= "_blank" action="https://formsubmit.co/avilacareng@gmail.com" method="POST" >
+
+
+                                
+                                    
                 
                                             <label for="name">Nombre:</label>
-                                            <input type="text" id="name" name="user_name" size="20em">
-                                        
-                                            <label for="ape">Apellido:</label>
-                                            <input type="text" id="ape" name="user_apellido" size="20em">
+                                            <input type="text" id="name" name="user_name" 
+                                            title="el nombre solo acepta letras" 
+                                            placeholder="escribe tu nombre" size="20em" 
+                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+
+                                            <label for="email">Email:</label>
+                                            <input type="email" name="email" placeholder="escribe tu email"
+                                            title="email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" 
+                                            required>
+
+                                            
+                                            <label for="turno">Asunto</label>
+                                            <select name="turno" id="user_turno">
+                                               <option value="1">-------</option>
+                                               <option value="2">Documentación</option>
+                                               <option value="3">Donación</option>
+                                               <option value="4">Informaciones de eventos</option>
+                                               <option value="5">Otro</option>
+                                           </select>
+
+                                           
+                                           <label for="msg">Mensaje:</label>
+                                           <textarea id="msg" name="user_message" 
+                                           cols="50em" rows="5em" 
+                                           placeholder=" Escriba aqui sus comentarios..."
+                                            data-parttern="^.{1,100}$" required title="no debes excederte de 100 caracteres">
+                                        </textarea>                 
+                                       <br>
+
+
+
+
+                                            <input type= "submit" value="enviar">
+                                            <div class="contact-form-response none">
+                                                <p>los datos fueron enviados correctamente</p>
+                                            </div>
+
+
+
+                                            
                                     
-                                            <label for="mail">Correo electrónico:</label>
-                                            <input type="email" id="mail" name="user_mail" placeholder="user@gmail.com" >
-                                        
-                                         <label for="turno">Asunto</label>
-                                         <select name="turno" id="user_turno">
-                                            <option value="1">-------</option>
-                                            <option value="2">Documentación</option>
-                                            <option value="3">Donación</option>
-                                            <option value="4">Informaciones de eventos</option>
-                                            <option value="5">Otro</option>
-                                        </select>  
-        
-                                            <label for="msg">Mensaje:</label>
-                                            <textarea id="msg" name="user_message" cols="50em" rows="5em" placeholder=" Escriba aqui..."></textarea>                 
-                                        <br>
-                                            <button type="button" class="boton-contacto">Enviar</button>
-                                        
+
+ 
                  </div>      
                 </section>
+        
+                    
         </main>
         
         <script src="js/headerandfooter.js"></script>
