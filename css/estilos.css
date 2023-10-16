@@ -1,7 +1,7 @@
 
 
 /*----------------------Desktop---------------------------*/
-@media (min-width:1120px){
+/* @media (min-width:1120px){
     .main-container{
         display: flex;
         width: 1114px;
@@ -27,7 +27,7 @@
         width: 100%;
         height: 60px;
     }
-}
+} */
 
 
 
@@ -245,27 +245,12 @@ background-position: center ;
 @media screen and (min-width: 1200px){
     
 }
-.contacto{
-    
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-    justify-content: space-around;
-
-    
-    
-
-}
 
 .contacto div {
-    /* background-color: #7C7C7C; */
     padding: 1em;
     border:2px solid rgb(231, 7, 7);
-    margin: 2em;
-    
+    margin: 2em;  
 }
-
 #nosotros{
     color: white;
     text-align:center;
@@ -286,9 +271,9 @@ background-position: center ;
     padding: 0.625em;
     line-gap-override: 1em;
 }
+/*      --------------formulario-------------- */
 
 .form{
-    /* background-color: #7C7C7C; */
     padding: 2em;
     border: 3px solid rgb(35, 32, 32);
     margin: 1em; 
@@ -296,215 +281,37 @@ background-position: center ;
     padding:auto;  
     background-color: #fbfbfb;    
 }
-input, select{
+.form input, select{
     background-color: #ecdedf;
-    width: 408px; 
+    width: 100%;  
     height: 40px; 
     border-radius: 5px;
     border-color: #000000;
 }
-textarea{
-    width: 405px; 
+.form textarea{
+    width: 100%; 
     height: 150px; 
     border-radius: 8px;  
-
     background-color: rgb(255, 255, 255);
 }
-button{
-    height: 45px; 
-    padding: 0 5px 0 5px ;  
-    margin: 10px 0 20px 0 ;
-    text-transform: uppercase;
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-    background-color: rgb(242, 235, 235);
-}
-  label{
+.form label{
     display: block; 
     float: center;  
-  }
-
-  /* Contenedor de imag. en carrusel */
- 
-    .img-s3{
-       text-align: center;
-    }
-    .carrousel{
-        width: 91%;
-        height:45% ;
-        background:rgba(54, 54, 54, 0.757);
-        backdrop-filter: blur(3px);
-        border: 1px solid rgba(255,255,255,0.25);
-        color:#282828;
-    }
-    .conteCarrousel{
-        width: 100%;
-        height: 45%;
-        overflow: hidden;
-    }
-    .itemCarrousel{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    .itemCarrouselTarjeta{
-        width: 100%;
-        height: 100%;
-    }
-    .itemCarrouselTarjeta img{
-        width: 100%;
-        align-items: center;
-        padding: 0.5em;
-    }
-    .itemCarrouselArrows{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%; 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px; 
-    }
-    
-    .conteCarrouselController{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .conteCarrouselController > a{
-        text-decoration: none;
-        font-size: 2em;
-        color: rgb(7, 1, 1);
-    }
-    .itemCarrouselArrows > a > i{
-        color: white;
-    }
-
-div#segundoTitulo{
-    background-color: rgb(214, 203, 209); 
-    width: 100%;
-    height: 100%;
-}
-
-div#tituloAlentador{
-    text-align: center;
-    text-size-adjust: 10;
-    background-color: rgb(243, 116, 36); 
-    width: 100%;
-    height: 100%;
-    margin-top: 5;
-
-}
-
-.mensaje_inicio{
-   text-align: center;
-}
-
-.contenedor1{
-text-align: center; 
-}
-.img-s3{
-   text-align: center;
-}
-.carrousel{
-    width: 100%;
-}
-
-.conteCarrousel{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-}
-
-.itemCarrousel{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
-}
-
-.itemCarrouselArrows > i:hover {
-    cursor: pointer;
-}
-
-#itemCarrousel-1{
-    background-color: rgb(226, 50, 50);
-}
-
-#itemCarrousel-2{
-    background-color: rgb(50, 200, 226);
-}
-
-#itemCarrousel-3{
-    background-color: rgb(200, 226, 50);
-}
-
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: rgb(7, 1, 1);
-}
-
-
-.itemCarrouselArrows > a > i{
-    color: white;
-}
-
-
-/*      --------------formulario-------------- */
-/* 
-seudoclases validaciones */
+} 
+/* seudoclases validaciones */
 
 .contact-form{
-
     --form-ok-color:rgb(149, 246, 149);
     --form-error-color:red;
     margin-left: auto;
     margin-right: auto;
-
 }
-
 .contact-form [required]:valid{
-
     border:thin solid var(--form-ok-color);
-
 }
 .contact-form  [required]:invalid{
-
     border:thin solid var(--form-error-color);
 }
-
-
 .none{
-
     display: none;
 }
