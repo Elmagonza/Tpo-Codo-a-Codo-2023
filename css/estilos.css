@@ -52,7 +52,7 @@ body {
 }
 
 #bodynosotros{
-background-image: url("/img/galeria/uniformados.jpg");
+background-image: url("/img/galeria/pared_museo.jpg");
 background-size:cover; /* Ajusta la imagen para cubrir toda la página */
 background-repeat: no-repeat; /* Evita que la imagen se repita */
 background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el desplazamiento de la página */
@@ -151,9 +151,13 @@ background-position: center ;
     grid-template-rows: 1fr 1fr;
 }
 #section3nosotros {
+    background:rgba(54, 54, 54, 0.757);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.25);
+    color:#282828;
+    margin: 0.8em;
     padding: 1em;
-    color:#ee6c77;
-    text-shadow: 2px 2px 3px black;
+    color: rgb(188, 182, 182);
     text-align: center;
 }
 
@@ -262,10 +266,10 @@ background-position: center ;
 .ser-scout{
     background-image: linear-gradient(180deg, #108e19 0%, #e1a497 100%);
     padding: 1em;
-    margin: 1em;
+    margin-top: 15em;
 }
 .programas{
-    background-image: linear-gradient(180deg, #108e19 0%, #e1a497 100%);    padding: 1em;
+    background-image: linear-gradient(180deg, #d6d4b4 0%, #e1a497 100%);    padding: 1em;
     margin: 1em;
     display: flex;
     flex-direction: column;
