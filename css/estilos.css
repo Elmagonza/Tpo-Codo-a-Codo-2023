@@ -201,7 +201,21 @@ background-position: center ;
     margin-left: 33%;
     padding: 0.5em;
 }
-
+.container-boton {
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+.botonwa{
+    width: 2.5em;
+}
 /*---FOOTER---*/
 .footer{
     display: flex;
