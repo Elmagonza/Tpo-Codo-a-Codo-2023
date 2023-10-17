@@ -252,7 +252,8 @@ background-position: center ;
 .contacto div {
     padding: 1em;
     border:2px solid rgb(231, 7, 7);
-    margin: 2em;  
+    margin: 2em;
+    background-color: #fbfbfb;  
 }
 #nosotros{
     color: white;
