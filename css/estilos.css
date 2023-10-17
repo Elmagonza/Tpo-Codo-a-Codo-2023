@@ -267,6 +267,10 @@ background-position: center ;
 .programa{
     padding: 0.5em;
 }
+.programa .insignia{
+    width: 30%;
+}
+
 .manada,.unidad,.caminantes,.rovers {
     padding: 0.625em;
     line-gap-override: 1em;
