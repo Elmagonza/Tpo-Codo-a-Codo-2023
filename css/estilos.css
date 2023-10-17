@@ -102,6 +102,29 @@ background-position: center ;
     background-color: #DF293B;
     border-radius: 4px;
 }
+/*---FOOTER---*/
+.footer{
+    display: flex;
+    justify-content:center ;
+    width: 100vw;
+    align-items: flex-start;
+    padding: 2em 3em 2em 3em;
+    background-color: #040404;
+    color: #7C7C7C;
+    height: auto; 
+}
+.extra{
+   display: flex; 
+    row-gap: 1em;
+    font-size: 1em;
+    font-size: 5em;
+}
+.redes{
+    display: flex; 
+    column-gap: 2em;
+    display: inline-block;
+    padding: 2em 0em 2em 3em;
+}
 
 /*--- MAIN---*/
 .main{
@@ -172,15 +195,24 @@ background-position: center ;
 }
 
 .alentador{
+    display: flex;
+    flex-direction:row;
     background-color: #3c9114;
     height:25vh;
-    padding: 2em;
+    padding: 1.5em;
     color:rgb(242, 242, 242);
 }
 .alentador h2 a{
     color:rgb(242, 242, 242);
-    
+        
 }
+.alentador .badenPowell{
+    width: 13em;
+}
+.alentador .badenPowell img{
+    width: 100%;
+}
+
 .sec3 .img-s3 img{
     width: 12em;
     padding: 0.5em;
@@ -216,49 +248,6 @@ background-position: center ;
 .botonwa{
     width: 2.5em;
 }
-/*---FOOTER---*/
-.footer{
-    display: flex;
-    justify-content:center ;
-    width: 100vw;
-    align-items: flex-start;
-    padding: 2em 3em 2em 3em;
-    background-color: #040404;
-    color: #7C7C7C;
-    height: auto; 
-}
-.extra{
-   display: flex; 
-    row-gap: 1em;
-    font-size: 1em;
-    font-size: 5em;
-}
-.redes{
-    display: flex; 
-    column-gap: 2em;
-    display: inline-block;
-    padding: 2em 0em 2em 3em;
-}
-/*  mobile styles*/
-
-
-/* small tablet styles*/
-@media screen and (min-width: 420px){
-    .header-grid{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1em;
-    } 
-}
-/*  large tablets*/
-@media screen and (min-width: 960px){
-    
-}
-/* desktop styles*/
-@media screen and (min-width: 1200px){
-    
-}
 
 .contacto div {
     padding: 1em;
@@ -279,18 +268,19 @@ background-position: center ;
     margin: 1em;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .programa{
     padding: 0.5em;
+    
+
 }
 .programa .insignia{
     width: 30%;
 }
 
-.manada,.unidad,.caminantes,.rovers {
-    padding: 0.625em;
-    line-gap-override: 1em;
-}
+
 /*      --------------formulario-------------- */
 
 .form{
@@ -318,6 +308,7 @@ background-position: center ;
     display: block; 
     float: center;  
 } 
+
 /* seudoclases validaciones */
 
 .contact-form{
@@ -334,4 +325,25 @@ background-position: center ;
 }
 .none{
     display: none;
+}
+
+
+    /*---Media Queries---*/
+
+/* small tablet styles*/
+@media screen and (min-width: 420px){
+    .header-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em;
+    } 
+}
+/*  large tablets*/
+@media screen and (min-width: 960px){
+    
+}
+/* desktop styles*/
+@media screen and (min-width: 1200px){
+    
 }
