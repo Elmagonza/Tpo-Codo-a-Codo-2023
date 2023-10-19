@@ -200,14 +200,18 @@ background-position: center ;
 
 .alentador{
     display: flex;
-    flex-direction:row;
+    align-items: center;
     background-color: #3c9114;
     height:25vh;
     padding: 1.5em;
     color:rgb(242, 242, 242);
 }
-.alentador h2 a{
+
+.alentador a{
     color:rgb(242, 242, 242);
+    font-weight: lighter;
+    font-size: 0.7em;
+
         
 }
 .alentador .badenPowell{
@@ -268,8 +272,9 @@ background-position: center ;
     padding: 1em;
     margin-top: 15em;
 }
-.programas{
-    background-image: linear-gradient(180deg, #d6d4b4 0%, #e1a497 100%);    padding: 1em;
+.programas {
+    background-image: linear-gradient(180deg, #d6d4b4 0%, #e1a497 100%);
+    padding: 1em;
     margin: 1em;
     display: flex;
     flex-direction: column;
@@ -278,11 +283,20 @@ background-position: center ;
 }
 .programa{
     padding: 0.5em;
-    
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.programa h4{
+    padding: 0.5em;
+}
+.prgrama h5{
+    padding: 0.3em;
 }
 .programa .insignia{
     width: 30%;
+    padding: 0.5em;
 }
 
 
