@@ -103,28 +103,58 @@ background-position: center ;
     border-radius: 4px;
 }
 /*---FOOTER---*/
-.footer{
-    display: flex;
-    justify-content:center ;
-    width: 100vw;
-    align-items: flex-start;
-    padding: 2em 3em 2em 3em;
+#pie{
+    width: 100%;
     background-color: #040404;
-    color: #7C7C7C;
-    height: auto; 
+    color: #7c7c7c;
+    margin:auto;
+    display: grid;
+    gap: 1em;
+    padding: 1em 0em 0em;
 }
-.extra{
-   display: flex; 
-    row-gap: 1em;
+#pie .box{
+    grid-column: 1/4;
+}
+#pie .box h1{
+    font-size: 1.8em;
+}
+#pie .box h2{
+    margin-bottom: 20px;
+    margin-left: 1.5em;
     font-size: 1em;
-    font-size: 5em;
 }
-.redes{
-    display: flex; 
-    column-gap: 2em;
+#pie .box .esc {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2em;
+}
+#pie .box a{
     display: inline-block;
-    padding: 2em 0em 2em 3em;
+    width: 40px;
+    height: 40px;
+    line-height: 47px;
+    text-align: center;
+    border-radius: 20px;
+    background-color:#7c7c7c;
+    margin-right: 1em;
+    transition: all 300ms ease;
 }
+#pie .box .redes-soc {
+    text-align: center;
+}
+#pie .box a:hover{
+    background-color: #df293b;
+}
+.grupo2 {
+    background-color: #282828;
+    padding: 0.8em 0;
+    text-align: center;
+    color: #696969;
+    display: grid;
+    grid-column: 1/4;
+}
+
 
 /*--- MAIN---*/
 .main{
@@ -233,13 +263,18 @@ background-position: center ;
     transform: scale(1.2);
 }
 .conocenos{
-    background-color: red;
-    padding: 1em 0em;
+    background-color:#3c9114;
+    padding: 1em;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .conocenos .boton-conocenos{
-    display: inline;
-    margin-left: 33%;
-    padding: 0.5em;
+    background-color: red;
+    padding: 0.8em;
+    color:white;
+    border: rgba(0, 0,0,.5);
 }
 .container-boton {
     background-color: #2e6329;
