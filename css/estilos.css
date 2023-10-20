@@ -454,7 +454,13 @@ background-position: center ;
     line-height:2em ;
     border-radius: 50%;
 }
-
+.next{
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    width: 1em;
+    
+}
 
     /*---Media Queries---*/
 
@@ -466,12 +472,9 @@ background-position: center ;
         justify-content: space-between;
         padding: 1em;
     } 
+    
 }
 /*  large tablets*/
 @media screen and (min-width: 960px){
-    
-}
-/* desktop styles*/
-@media screen and (min-width: 1200px){
     
 }
