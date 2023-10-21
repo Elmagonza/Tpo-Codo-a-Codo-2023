@@ -291,6 +291,13 @@ background-position: center ;
 .botonwa{
     width: 2.5em;
 }
+.user-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    width: 24em;
+    display: inline-block;
+}
 
 .contacto div {
     padding: 1em;
