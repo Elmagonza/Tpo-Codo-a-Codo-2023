@@ -1,6 +1,6 @@
 // Define el contenido del encabezado
 let headerContenido = `
-    <a href=""><img class="logo" src="img/logo.jpg" alt="logo" width="35em" > </a>
+    <a href=""><img class="logo" src="img/logo.png" alt="logo" width="35em" > </a>
     <nav class="navbar-grid">
         <ul class="menu">
             <li><a href="index.html" class="item">Inicio</a></li>

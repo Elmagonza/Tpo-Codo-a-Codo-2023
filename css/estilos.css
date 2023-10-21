@@ -277,11 +277,11 @@ background-position: center ;
     border: rgba(0, 0,0,.5);
 }
 .container-boton {
-    background-color: #2e6329;
-    border: 1px solid #fff;
+    /* background-color: #2e6329;
+    border: 1px solid #fff; */
     position: fixed;
     z-index: 999;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     bottom: 20px;
     right: 20px;
     padding: 10px;
@@ -297,7 +297,9 @@ background-position: center ;
     margin: 20px;
     width: 24em;
     display: inline-block;
+    text-align: center;
 }
+.user-box img{ border-radius: 50%;}
 
 .contacto div {
     padding: 1em;

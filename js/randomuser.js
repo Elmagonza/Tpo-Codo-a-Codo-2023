@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Espera a que el documento HTML esté completamente cargado antes de ejecutar el código.
 
     // Obtén referencias a elementos HTML que vamos a utilizar.
-    const userContainer = document.getElementById("userContainer"); // Contenedor principal
+    // const userContainer = document.getElementById("userContainer"); // Contenedor principal
     const tituloLiderDelMes = document.getElementById("tituloLiderDelMes"); // Título
     const userImage = document.getElementById("userImage"); // Imagen del usuario
     const userName = document.getElementById("userName"); // Nombre del usuario
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tituloLiderDelMes.textContent = `Líder del mes de ${monthName} ${currentYear}`; // Actualiza el título con el mes actual.
 
         // Obtiene el mes almacenado en el almacenamiento local.
-        const storedMonth = parseInt(localStorage.getItem("currentMonth"), 10);
+        const storedMonth = parseInt(localStorage.getItem("currentMonth"), 10); //el 10 le dice al parseInt que trabajamos con numeros decimales, es decir en base 10
 
         // Comprueba si el mes ha cambiado o es la primera vez que se carga la página.
         if (isNaN(storedMonth) || storedMonth !== currentMonth) {
