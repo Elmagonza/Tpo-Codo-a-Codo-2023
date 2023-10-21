@@ -1,65 +1,62 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const userContainer = document.getElementById("userContainer");
-    const tituloLiderDelMes = document.getElementById("tituloLiderDelMes");
-    const userData = document.getElementById("userData");
-    const userImage = document.getElementById("userImage");
-    const userName = document.getElementById("userName");
-    const userEmail = document.getElementById("userEmail");
+    // Espera a que el documento HTML esté completamente cargado antes de ejecutar el código.
 
-    // Función para obtener el nombre del mes actual
+    // Obtén referencias a elementos HTML que vamos a utilizar.
+    const userContainer = document.getElementById("userContainer"); // Contenedor principal
+    const tituloLiderDelMes = document.getElementById("tituloLiderDelMes"); // Título
+    const userImage = document.getElementById("userImage"); // Imagen del usuario
+    const userName = document.getElementById("userName"); // Nombre del usuario
+    const userEmail = document.getElementById("userEmail"); // Correo electrónico del usuario
+
+    // Función para obtener el nombre del mes actual.
     function getMonthName(month) {
         const monthNames = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
         return monthNames[month];
     }
 
-    // Función para actualizar el título con el mes actual
-    function updateTitleWithCurrentMonth() {
+    // Función para actualizar el título con el mes actual y obtener un usuario.
+    function updateTitleAndUser() {
         const today = new Date();
-        const currentMonth = today.getMonth(); //devuelve el mes en numero de 1 a 12
-        const currentYear = today.getFullYear(); 
-        const monthName = getMonthName(currentMonth);
-        tituloLiderDelMes.textContent = `Líder del mes de ${monthName} ${currentYear}`;
-    }
+        const currentMonth = today.getMonth(); // Obtiene el mes actual (0-11).
+        const currentYear = today.getFullYear(); // Obtiene el año actual.
+        const monthName = getMonthName(currentMonth); // Convierte el número del mes en el nombre del mes.
+        tituloLiderDelMes.textContent = `Líder del mes de ${monthName} ${currentYear}`; // Actualiza el título con el mes actual.
 
-    // Llama a la función para actualizar el título con el mes actual
-    updateTitleWithCurrentMonth();
+        // Obtiene el mes almacenado en el almacenamiento local.
+        const storedMonth = parseInt(localStorage.getItem("currentMonth"), 10);
 
-    // Función para obtener un usuario aleatorio desde la API de RandomUser y mostrarlo
-    function getRandomUserAndDisplay() {
-        // Comprobar si ya hay un usuario almacenado en el almacenamiento local
-        const storedUser = localStorage.getItem("selectedUser");
-
-        if (storedUser) {
-            // Si hay un usuario almacenado, mostrarlo en lugar de obtener uno nuevo
-            const user = JSON.parse(storedUser);
-            updateUserData(user);
-        } else {
-            // Si no hay un usuario almacenado, obtener uno nuevo
+        // Comprueba si el mes ha cambiado o es la primera vez que se carga la página.
+        if (isNaN(storedMonth) || storedMonth !== currentMonth) {
+            // Si el mes ha cambiado o es la primera vez, obtiene un nuevo usuario aleatorio.
             fetch("https://randomuser.me/api/")
                 .then((response) => response.json())
                 .then((data) => {
                     const user = data.results[0];
-                    updateUserData(user);
-                    // Almacenar el usuario en el almacenamiento local
-                    localStorage.setItem("selectedUser", JSON.stringify(user));
+                    localStorage.setItem("currentMonth", currentMonth); // Almacena el mes actual.
+                    localStorage.setItem("selectedUser", JSON.stringify(user)); // Almacena los datos del usuario.
+                    updateUserData(user); // Actualiza la caja con los datos del nuevo usuario.
                 })
                 .catch((error) => {
                     console.error("Error al obtener datos del líder:", error);
                 });
+        } else {
+            // Si no ha cambiado el mes, carga el usuario almacenado en el almacenamiento local.
+            const user = JSON.parse(localStorage.getItem("selectedUser"));
+            updateUserData(user); // Actualiza la caja con los datos del usuario almacenado.
         }
     }
 
-    // Función para actualizar los datos del usuario en la caja
+    // Función para actualizar los datos del usuario en la caja.
     function updateUserData(user) {
-        const name = user.name.first + " " + user.name.last;
+        const name = `${user.name.first} ${user.name.last}`;
         const email = user.email;
         const picture = user.picture.large;
 
-        userImage.src = picture;
-        userName.textContent =  `${name}`;
-        userEmail.textContent = `${email}`;
+        userImage.src = picture; // Actualiza la imagen del usuario.
+        userName.textContent = name; // Actualiza el nombre del usuario.
+        userEmail.textContent = email; // Actualiza el correo electrónico del usuario.
     }
 
-    // Llama a la función para obtener y mostrar el usuario aleatorio al cargar la página
-    getRandomUserAndDisplay();
+    // Llama a la función para actualizar el título y los datos del usuario al cargar la página.
+    updateTitleAndUser();
 });
