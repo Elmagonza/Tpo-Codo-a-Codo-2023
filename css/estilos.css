@@ -57,7 +57,6 @@ background-size:cover; /* Ajusta la imagen para cubrir toda la página */
 background-repeat: no-repeat; /* Evita que la imagen se repita */
 background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el desplazamiento de la página */
 background-position: center ; 
-   
 }
 
 .contenedor-grid{
@@ -277,11 +276,8 @@ background-position: center ;
     border: rgba(0, 0,0,.5);
 }
 .container-boton {
-    /* background-color: #2e6329;
-    border: 1px solid #fff; */
     position: fixed;
     z-index: 999;
-    /* border-radius: 50%; */
     bottom: 20px;
     right: 20px;
     padding: 10px;
@@ -293,7 +289,7 @@ background-position: center ;
 }
 .user-box {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 2em;
     margin: 1em;
     width: 80%;
     display: inline-block;
@@ -393,6 +389,9 @@ background-position: center ;
 /* ------ Galeria ---------- */
 .pre-galeria{
     padding: 0.5em;
+    background-color: purple;
+    color: white;
+    padding: 1em;
 
 }
 
