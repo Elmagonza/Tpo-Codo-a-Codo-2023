@@ -261,17 +261,20 @@ background-position: center ;
 .sec3 .img-s3 img:hover{
     transform: scale(1.2);
 }
-.conocenos{
+.cta{
     background-color:#3c9114;
     padding: 1em;
     color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1em;
 }
-.conocenos .boton-conocenos{
+.cta .boton-cta{
     background-color: red;
+    border-radius: 5px;
     padding: 0.8em;
+    text-decoration: none;
     color:white;
     border: rgba(0, 0,0,.5);
 }
@@ -388,11 +391,9 @@ background-position: center ;
 
 /* ------ Galeria ---------- */
 .pre-galeria{
-    padding: 0.5em;
-    background-color: purple;
+    padding: 2em 1em;
+    background-color:#3c9114;
     color: white;
-    padding: 1em;
-
 }
 
 .section2 .titulo-galeria{
