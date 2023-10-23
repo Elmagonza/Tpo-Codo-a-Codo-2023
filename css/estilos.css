@@ -244,7 +244,7 @@ background-position: center ;
         
 }
 .alentador .badenPowell{
-    width: 13em;
+    width: 150px;
 }
 .alentador .badenPowell img{
     width: 100%;
@@ -304,7 +304,8 @@ background-position: center ;
     padding: 1em;
     border:2px solid rgb(231, 7, 7);
     margin: 2em;
-    background-color: #fbfbfb;  
+    background-color: #fbfbfb;
+   
 }
 #nosotros{
     color: white;
@@ -313,6 +314,8 @@ background-position: center ;
 .ser-scout{
     background-image: linear-gradient(180deg, #108e19 0%, #e1a497 100%);
     padding: 1em;
+    max-width: 630px;
+    margin: auto;
     margin-top: 15em;
 }
 .programas {
@@ -330,6 +333,7 @@ background-position: center ;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    max-width: 530px ;
 }
 .programa h4{
     padding: 0.5em;
@@ -482,13 +486,20 @@ background-position: center ;
         justify-content: space-between;
         padding: 1em;
     } 
+    
     .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
     .section2 .titulo-galeria{
         grid-column: 1/3;
     }
-    
+    .programa .insignia{
+        width: 140px;
+    }
+    .programas{
+        display: flex;
+        flex-wrap: wrap;
+    }
     
 }
 /*  large tablets*/
@@ -500,4 +511,6 @@ background-position: center ;
     .section2 .titulo-galeria{
         grid-column: 1/4;
     }
+
+    
 }
