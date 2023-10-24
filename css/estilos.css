@@ -249,7 +249,10 @@ background-position: center ;
 .alentador .badenPowell img{
     width: 100%;
 }
-
+.sec3 p{
+    text-justify:distribute;
+    
+}
 .sec3 .img-s3 img{
     width: 12em;
     padding: 0.5em;
@@ -293,8 +296,10 @@ background-position: center ;
 .user-box {
     border: 1px solid #ccc;
     padding: 2em;
-    margin: 1em;
+    margin: auto;
+    margin-top: 1em;
     width: 80%;
+    max-width: 400px;
     display: inline-block;
     text-align: center;
 }
