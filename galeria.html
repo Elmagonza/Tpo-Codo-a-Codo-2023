@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/9b624527fd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
@@ -16,153 +17,121 @@
 <body>
     <div class="contenedor-grid">
         <div class="contenedor-grid">
-            <header class="header-grid">
-                <a href=""><img class="logo" src="img/logo.jpg" alt="logo" width="35em" > </a>
-                <nav class="navbar-grid"> 
-                    <ul class="menu">
-                        <li><a href="index.html" class="item">Inicio</a></li>
-                        <li><a href="nosotros.html" class="item">Nosotros</a></li>
-                        <li><a href="galeria.html" class="item">Galeria</a></li>
-                        <li><a href="contacto.html" class="item">Contacto</a></li>
-                    </ul> 
-                </nav>
-            </header>
         <main> 
             <section class="section1">
-                <div>
-                    <img src="img/galeria/chicos_piso.jpg" alt="" width="50%">
-                    <h2>subtitulo de imagen</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In enim nobis repellendus, quibusdam non ducimus repellat totam perspiciatis incidunt nisi at recusandae, quaerat quo molestiae adipisci doloribus nemo nulla minima commodi! Facilis consequatur nemo ab?</p>
+                <div class="pre-galeria">
+                    <p>El <b>Movimiento Scout</b> es la forma definitiva de aprender haciendo. Los jóvenes dirigen sus propias actividades y participan en servicios, aventuras al aire libre y programas de desarrollo de liderazgo.</p>
+                     
                 </div>
             </section>
             
             <section class="section2">
-                <div class="carrousel">
-                    <div class="conteCarrousel">
-                        <div class="itemCarrousel" id="itemCarrousel-1">
-                            <div class="itemCarrouselTarjeta">                            
-                                <img src="img/galeria/bandera.jpg" alt="item1" width="25%"> 
-                            </div>
-                            <div class="itemCarrouselArrows">
-                                <a href="#itemCarrousel-3">
-                                    <i class="fas fa-chevron-left"></i>
-                                </a>
-                                <a href="#itemCarrousel-2">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="itemCarrousel" id="itemCarrousel-2">
-                            <div class="itemCarrouselTarjeta">
-                                <img src="img/galeria/chicos_sentados_piltri.jpg" alt=""width="25%">
-                            </div>
-                            <div class="itemCarrouselArrows">
-                                <a href="#itemCarrousel-1">
-                                    <i class="fas fa-chevron-left"></i>
-                                </a>
-                                <a href="#itemCarrousel-3">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="itemCarrousel" id="itemCarrousel-3">
-                            <div class="itemCarrouselTarjeta">
-                                <img class="logo" src="img/galeria/diris_casilla.jpg" alt="logo" width="25%">
-                            </div>
-                            <div class="itemCarrouselArrows">
-                                <a href="#itemCarrousel-2">
-                                    <i class="fas fa-chevron-left"></i>
-                                </a>
-                                <a href="#itemCarrousel-1">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="itemCarrousel" id="itemCarrousel-4">
-                            <div class="itemCarrouselTarjeta">
-                                <img class="logo" src="img/galeria/pared_museo.jpg" alt="logo" width="25%">
-                            </div>
-                            <div class="itemCarrouselArrows">
-                                <a href="#itemCarrousel-2">
-                                    <i class="fas fa-chevron-left"></i>
-                                </a>
-                                <a href="#itemCarrousel-1">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="itemCarrousel" id="itemCarrousel-5">
-                            <div class="itemCarrouselTarjeta">
-                                <img class="logo" src="img/galeria/arce.jpg" alt="logo" width="25%">
-                            </div>
-                            <div class="itemCarrouselArrows">
-                                <a href="#itemCarrousel-2">
-                                    <i class="fas fa-chevron-left"></i>
-                                </a>
-                                <a href="#itemCarrousel-1">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="conteCarrouselController">
-                            <a href="#itemCarrousel-1">•</a>
-                            <a href="#itemCarrousel-2">•</a>
-                            <a href="#itemCarrousel-3">•</a>
-                            <a href="#itemCarrousel-4">•</a>
-                            <a href="#itemCarrousel-5">•</a>
-                        </div>
-                    </div>
-                    
+                
+                <div class="galeria">
+                    <h3 class="titulo-galeria">Galeria de imágenes</h3>
+
+                    <a href="#image1" >
+                        <img src="/img/galeria/arce-2.png" alt="Padre Arce">
+                    </a>
+                    <a href="#image2" >
+                        <img src="/img/galeria/abrazoScout.webp" alt="Abrazo scout">
+                    </a>
+                    <a href="#image3" >
+                        <img src="/img/galeria/lobatos.webp" alt="Lobatos">
+                    </a>
+                    <a href="#image4" >
+                        <img src="/img/galeria/promesaLey.webp" alt="Promesa y ley">
+                    </a>
+                    <a href="#image5" >
+                        <img src="/img/galeria/diris_casilla.jpg" alt="Dirigentes">
+                    </a>
+                    <a href="#image6" >
+                        <img src="/img/galeria/chicos_piso.jpg" alt="Merienda scout">
+                    </a>
+                    <a href="#image7" >
+                        <img src="/img/galeria/fogon_grupo.jpg" alt="Fogon">
+                    </a>
+                    <a href="#image8">
+                        <img src="/img/galeria/pañuelos.png" alt="Museo Scout">
+                    </a>
+                    <a href="#image9" >
+                        <img src="/img/galeria/uniformados.jpg" alt="Grupo Scout">
+                    </a>
                 </div>
+                
             </section>
             
             <section class="section3">
-                <div>
-                    <img src="img/galeria/padre_arce2.jpg" alt="" width="30%">
-                    <h2>subtitulo de imagen</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore delectus, magni consectetur cum debitis nulla. Illo quos earum nemo dolorum reiciendis totam. Labore tenetur atque blanditiis id accusantium placeat, sit exercitationem assumenda quidem dolorum saepe. Suscipit molestiae saepe molestias adipisci, fuga perferendis nostrum maxime inventore!</p>
-                </div>  
-                <div>
-                    <img src="img/galeria/uniformados.jpg" alt="" width="30%">
-                    <h2>subtitulo de imagen</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem asperiores nihil quaerat corporis tenetur laudantium natus iure at maxime amet, eveniet facere quibusdam exercitationem molestias ab illo, ipsa, ex sint distinctio inventore reprehenderit consectetur! Voluptatibus at ipsam sunt! Sed molestiae rerum corrupti autem nobis?</p>
-                </div>
-            </section>
+                <article class="light-box" id="image1">
+                    <a href="#image9" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/arce-2.png" alt="Padre Arce">
+                    <a href="#image2" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article> 
 
-     
-        </main>    
-        <footer class="pie">
-            <div class="box">
-                <div class="esc">
-                    <h1>Grupo Scout Nº7-Sagrado Corazón </h1>
-                </div>
+                <article class="light-box" id="image2">
+                    <a href="#image1" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/abrazoScout.webp" alt="Abrazo scout">
+                    <a href="#image3" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article> 
+
+                <article class="light-box" id="image3">
+                    <a href="#image2" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/lobatos.webp" alt="Lobatos">
+                    <a href="#image4" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article>
+
+                <article class="light-box" id="image4">
+                    <a href="#image3" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/chicos_piso.jpg" alt="Merienda scout">
+                    <a href="#image5" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article> 
+
+                <article class="light-box" id="image5">
+                    <a href="#image4" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/diris_casilla.jpg" alt="Dirigentes">
+                    <a href="#image6" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article> 
+
+                <article class="light-box" id="image6">
+                    <a href="#image5" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/promesaLey.webp" alt="Promesa y Ley">
+                    <a href="#image7" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article> 
+
+                <article class="light-box" id="image7">
+                    <a href="#image6" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/fogon_grupo.jpg" alt="Fogón">
+                    <a href="#image8" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article> 
+
+                <article class="light-box" id="image8">
+                    <a href="#image7" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/pañuelos.png" alt="Museo scout">
+                    <a href="#image9" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article>
+                 
+                <article class="light-box" id="image9">
+                    <a href="#image8" class="next"><i class="fa-solid fa-circle-arrow-left" style="color: #c11a1a;"></i> </a>
+                    <img src="/img/galeria/uniformados.jpg" alt="Grupo Scout">
+                    <a href="#image1" class="next"><i class="fa-solid fa-circle-arrow-right" style="color: #c11a1a;"></i></a>
+                    <a href="#" class="close">X</a>
+                </article> 
+            </section>
+            <div class="cta">
+                <p>¿Querés formar parte de esta gran familia mundial?</p>
+                <a href="contacto.html"><button class="boton-cta">Sé parte</button></a>
             </div>
             
-            <div class="box">
-                <h2>Contacto</h2>
-                <div class="info">
-                    <ul>
-                    <li>Tel:xx xxxx-xxxx</li>
-                    <li>Dirección:Av. Gral. Tomás de Iriarte 3051</li>
-                    <li>Gmail:xxxxxxx@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">  
-                <h2>Nuestras redes</h2>
-                <div class="redes-soc">
-                <a href="https://www.facebook.com/sagradocorazonbarracas" target="_blank"><img src="img/redes/facebook.png"
-                        alt="Facebook" width="20em" title="Ir a Facebook"></a>
-                <a href="https://www.instagram.com/scoutsagrado/" target="_blank"><img src="img/redes/instagram.png"
-                        alt="Instagram" width="20em" title="Ir a Instagram"></a>
-                <a href="https://twitter.com/ScoutsSagrado" target="_blank"><img src="img/redes/twitter.png" alt=""
-                        width="20em" title="Ir a Twitter"></a>
-                </div>
-            </div>
-        <div class="grupo2">
-                    <p>&copy; Derechos reservado 2023-Desarrollado por alumnos de Codo a Codo </p>
-            </div>
-        </footer> 
+        </main>    
+        <script src="js/headerandfooter.js"></script>
         
     </div>
     

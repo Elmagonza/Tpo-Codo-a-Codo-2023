@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,124 +13,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Grupo Scout Sagrado Corazón</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" sizes="32x32">
+    <script src="./formulario.js"></script>
+
 </head>
 
 <body id="bodycontacto">
     <div class="contenedor-grid">
-            <header class="header-grid">
-                <a href=""><img class="logo" src="img/logo.jpg" alt="logo" width="35em" > </a>
-                <nav class="navbar-grid"> 
-                    <ul class="menu">
-                        <li><a href="index.html" class="item">Inicio</a></li>
-                        <li><a href="nosotros.html" class="item">Nosotros</a></li>
-                        <li><a href="galeria.html" class="item">Galeria</a></li>
-                        <li><a href="contacto.html" class="item">Contacto</a></li>
-                    </ul> 
-                </nav>
-            </header>
         
         <main class="main">
-            <section class="con-sec-1">
-
-
-                    <div class="infor">
+            <section class="section1">
+                <div class="contacto">
+                    <div id="info">
                         <h1>Contacto</h1>
-                        <br>
-                        <p>Puedes contactar con nosotros y enviarnos tus dudas en:</p>  
-                        <ul>
-                                <li>Tel:xx xxxx-xxxx</li>
-                                <li>Gmail:xxxxxxx@gmail.com</li>
-                                <li>Dirección:Av. Gral. Tomás de Iriarte 3051</li>
+                        <p><u>Grupo Scout Nº7-Sagrado Corazón</u></p>
+                        <p>Puedes contactar con nosotros y enviarnos tus dudas en:</p>
+                            <ul>
+                                <li>Mail: grupo425@scouts.org.ar</li>
+                                <li>Dirección: Av. Gral. Tomás de Iriarte 3051 - Ciudad Autónoma de Buenos Aires (C1291ACQ) 
+                                </li>
                             </ul>
                     </div>
-
-                    <div class="maps">
+                    <div class="mapa">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.153767778759!2d-58.389227000000005!3d-34.650819399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb5c9be450e3%3A0x1f8fb272dc109536!2sBas%C3%ADlica%20del%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses-419!2sar!4v1695846425691!5m2!1ses-419!2sar"
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-
-
-         </section>
-                
-            <section class="con-sec-2">
-
-                <div class=" infor"> 
-                                <h2>Contactenos</h2>
-                                <p>Escríbenos y nos pondremos en contacto contigo</p>           
                 </div>
-                
-                <div id="caja-form">
-
-                    <div class="formu">
-                         <form action="https://formspree.io/f/mzblgbje" method="post">
-                            <div id="caja">
-
-                                <div class="hi"> 
-                                        <label for="name">Nombre:</label>
-                                            <input type="text" id="name" name="user_name" size="20em"> 
-                                        <label for="mail">Correo electrónico:</label>
-                                            <input type="email" id="mail" name="user_mail" placeholder="user@gmail.com" >
-
-                                </div>
-
-                                <div class="hi">
-                                        <label for="ape">Apellido:</label>
-                                            <input type="text" id="ape" name="user_apellido" size="20em">
-                                        <label for="turno">Asunto</label>
-                                        <select name="turno" id="user_turno">
-                                            <option value="1">-------</option>
-                                            <option value="2">Documentación</option>
-                                            <option value="3">Donación</option>
-                                            <option value="4">Informaciones de eventos</option>
-                                            <option value="5">Otro</option>
-                                        </select>
-                                </div>
-
-                            </div>
-                            <label for="msg">Mensaje:</label>
-                            <textarea id="msg" name="user_message" cols="50em" rows="5em" placeholder=" Escriba aqui..."></textarea>                
-                            <button type="button" class="boton-contacto">Enviar</button>            
-                    </div>
-
-                </div>    
             </section>
-            
-        </main>
-        <footer class="pie">
-            <div class="box">
-                <div class="esc">
-                    <h1>Grupo Scout Nº7-Sagrado Corazón </h1>
-                </div>
-            </div>
-            
-            <div class="box">
-                <h2>Contacto</h2>
-                <div class="info">
-                    <ul>
-                    <li>Tel:xx xxxx-xxxx</li>
-                    <li>Dirección:Av. Gral. Tomás de Iriarte 3051</li>
-                    <li>Gmail:xxxxxxx@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">  
-                <h2>Nuestras redes</h2>
-                <div class="redes-soc">
-                <a href="https://www.facebook.com/sagradocorazonbarracas" target="_blank"><img src="img/redes/facebook.png"
-                        alt="Facebook" width="20em" title="Ir a Facebook"></a>
-                <a href="https://www.instagram.com/scoutsagrado/" target="_blank"><img src="img/redes/instagram.png"
-                        alt="Instagram" width="20em" title="Ir a Instagram"></a>
-                <a href="https://twitter.com/ScoutsSagrado" target="_blank"><img src="img/redes/twitter.png" alt=""
-                        width="20em" title="Ir a Twitter"></a>
-                </div>
-            </div>
-        <div class="grupo2">
-                    <p>&copy; Derechos reservado 2023-Desarrollado por alumnos de Codo a Codo </p>
-            </div>
-        </footer> 
+                
+            <section class="section2">
+                <div class="form"> 
+                    <h2>Contactanos</h2>
+                    <h3>Escribinos y nos pondremos en contacto con vos a la brevedad</h3>          
+                    <br>
+                    <form class="contact-form"  target= "_blank" action="https://formsubmit.co/grupo425@scouts.org.ar" method="POST" >
+
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name" 
+                        title="el nombre solo acepta letras" 
+                        placeholder=" escribí tu nombre" size="20em" 
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder=" ingresa tu email"
+                        title="email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" 
+                        required>
+
+                        
+                        <label for="turno">Asunto</label>
+                        <select name="turno" id="user_turno">
+                            <option value="1">-------</option>
+                            <option value="2">Documentación</option>
+                            <option value="3">Donación</option>
+                            <option value="4">Informaciones de eventos</option>
+                            <option value="5">Otro</option>
+                        </select>
+
+                        
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="user_message" 
+                        cols="50em" rows="5em" 
+                        placeholder=" Escriba aqui sus comentarios..."
+                        data-parttern="^.{1,100}$" required title="no debes excederte de 100 caracteres">
+                    </textarea>                 
+                    <br>
+
+                        <input type= "submit" value="enviar">
+                        <div class="contact-form-response none">
+                            <p>Los datos fueron enviados correctamente.</p>
+                        </div>
+
+                 </div>      
+                </section>
         
+                <div class="container-boton">
+
+                    <a href="https://wa.me/+5491158750339?text=QUIERO%20SER%20SCOUT">
+                        <img class="botonwa" src="img/what.png" alt="">
+                    </a>
+                
+                </div>
+                    
+        </main>
+        
+        <script src="js/headerandfooter.js"></script>
     </div>
     
 </body>
