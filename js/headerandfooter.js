@@ -41,7 +41,7 @@ let footerContenido = `
         </div>
     </div>
     <div class="grupo2">
-        <p>&copy; Derechos reservado 2023<br>Desarrollado por alumnos de Codo a Codo </p>
+        <p>&copy; Derechos reservados 2023<br>Desarrollado por alumnos de Codo a Codo </p>
     </div>
 
 `;
