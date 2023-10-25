@@ -52,7 +52,7 @@ body {
 }
 
 #bodynosotros{
-background-image: url("/img/galeria/pared_museo.jpg");
+background-image: url("img/galeria/pared_museo.jpg");
 background-size:cover; /* Ajusta la imagen para cubrir toda la página */
 background-repeat: no-repeat; /* Evita que la imagen se repita */
 background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el desplazamiento de la página */
@@ -245,9 +245,12 @@ background-position: center ;
 }
 .alentador .badenPowell{
     width: 150px;
+    /* background-color: #282828; */
+    
+    
 }
 .alentador .badenPowell img{
-    width: 100%;
+    width: 55%;
 }
 
 .sec3 .img-s3 img{
@@ -263,6 +266,7 @@ background-position: center ;
 }
 .cta{
     background-color:#3c9114;
+    margin-top: 1em;
     padding: 1em;
     color:white;
     display: flex;
@@ -291,12 +295,17 @@ background-position: center ;
     width: 2.5em;
 }
 .user-box {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     padding: 2em;
     margin: 1em;
-    width: 80%;
+    /* width: 80%; */
+    max-width: max-content;
     display: inline-block;
     text-align: center;
+}
+#userContainer{
+    display: flex;
+    justify-content: center;
 }
 .user-box img{ border-radius: 50%;}
 
