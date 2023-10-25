@@ -232,25 +232,26 @@ background-position: center ;
     align-items: center;
     background-color: #3c9114;
     height:25vh;
-    padding: 1.5em;
+    height: max-content;
+    margin: 2em;
     color:rgb(242, 242, 242);
+    padding: 0em 1em;    
 }
 
 .alentador a{
     color:rgb(242, 242, 242);
     font-weight: lighter;
-    font-size: 0.7em;
-
-        
+    font-size: 0.7em;   
+    padding: 2em;    
 }
 .alentador .badenPowell{
-    width: 150px;
-    /* background-color: #282828; */
-    
-    
+   text-align: center;
+    /* background-color: #d11919; */  
 }
 .alentador .badenPowell img{
-    width: 55%;
+    width: 38%;
+    margin: 1em;
+    
 }
 
 .sec3 .img-s3 img{
