@@ -1,55 +1,57 @@
-class Catalogo:
-    productos = []
+class Nomina:
+    registros = []
     
-    def agregar_producto(self, codigo, descripcion, cantidad, precio, imagen, proveedor):
-        if self.consultar_producto(codigo):
+    def agregar_registro(self, legajo, nombre, apellido, edad, mail, rama):
+        if self.consultar_registro(legajo):
             return False
         else:
-            nuevo_producto = {
-                "codigo" : codigo,
-                "descripcion":descripcion,
-                "cantidad": cantidad,
-                "precio" : precio,
-                "imagen" : imagen,
-                "proveedor": proveedor
+            nuevo_registro = {
+                "legajo" : legajo,
+                "nombre":nombre,
+                "apellido": apellido,
+                "edad" : edad,
+                "mail" : mail,
+                "rama": rama
             }
-            self.productos.append(nuevo_producto)
+            self.registros.append(nuevo_registro)
             return True
 
-    def consultar_producto(self, codigo):
-        for producto in self.productos:
-            if producto['codigo'] == codigo:
-                return producto
+    def consultar_registro(self, legajo):
+        for registro in self.registros:
+            if registro['legajo'] == legajo:
+                return registro
         return False
     
-    def listar_productos(self):
+    def listar_registros(self):
         print()
         print("-"*50)
-        for producto in self.productos:
-            print(f'Código.........: {producto["codigo"]}')
-            print(f'Descripcion....: {producto["descripcion"]}')
-            print(f'Cantidad.......: {producto["cantidad"]}')
-            print(f'Precio.........: {producto["precio"]}')
-            print(f'Imagen.........: {producto["imagen"]}')
-            print(f'Proveedor......: {producto["proveedor"]}')
+        for registro in self.registros:
+            print(f'\tLegajo....: {registro["legajo"]}')
+            print(f'\tNombre....: {registro["nombre"]}')
+            print(f'\tApellido..: {registro["apellido"]}')
+            print(f'\tEdad......: {registro["edad"]}')
+            print(f'\tMail......: {registro["mail"]}')
+            print(f'\tRama......: {registro["rama"]}')
             print("-"*50)
             
-    def modificar_producto(self, codigo, nueva_descripcion, nueva_cantidad, nuevo_precio, nueva_imagen, nuevo_proveedor):
-        for producto in self.productos:
-            if producto['codigo'] == codigo:
-                producto['descripcion'] = nueva_descripcion
-                producto['cantidad'] = nueva_cantidad
-                producto['precio'] = nuevo_precio
-                producto['imagen'] = nueva_imagen
-                producto['proveedor'] = nuevo_proveedor
+    def modificar_registro(self, legajo, nuevo_nombre, nuevo_apellido, nueva_edad, nuevo_mail, nueva_rama):
+        for registro in self.registros:
+            if registro['legajo'] == legajo:
+                registro['nombre'] = nuevo_nombre
+                registro['apellido'] = nuevo_apellido
+                registro['edad'] = nueva_edad
+                registro['mail'] = nuevo_mail
+                registro['rama'] = nueva_rama
                 return True
         return False
             
-    def eliminar_producto(self,codigo):
-        for producto in self.productos:
-            if producto['codigo'] == codigo:
-                self.productos.remove(producto)
+    def eliminar_registro(self,legajo):
+        for registro in self.registros:
+            if registro['legajo'] == legajo:
+                self.registros.remove(registro)
                 return True
         return False
     
     
+#Programa principal
+
