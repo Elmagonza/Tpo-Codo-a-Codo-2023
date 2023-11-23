@@ -5,7 +5,7 @@ class Nomina:
         if self.consultar_registro(legajo):
             return False
         else:
-            nuevo_registro = {
+            nuevo_registro = { # Diccionario de datos
                 "legajo" : legajo,
                 "nombre":nombre,
                 "apellido": apellido,
