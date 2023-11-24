@@ -7,6 +7,7 @@ let headerContenido = `
             <li><a href="nosotros.html" class="item">Nosotros</a></li>
             <li><a href="galeria.html" class="item">Galeria</a></li>
             <li><a href="contacto.html" class="item">Contacto</a></li>
+            <li><a href="crud.html" class="item">CRUD</a></li>
         </ul>
     </nav>
 `;

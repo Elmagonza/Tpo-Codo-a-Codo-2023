@@ -51,7 +51,7 @@ background-position: center ;
 .menu li{
     display: inline-block;
     text-decoration: none;  
-    padding: 1em 0em;
+    padding: 0.4em 0em;
 }
 .menu li a{
     color: rgb(188, 182, 182);
