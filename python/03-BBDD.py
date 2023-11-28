@@ -12,7 +12,7 @@ class Nomina:
         self.cursor = self.conn.cursor(dictionary=True)
         
         self.cursor.execute('''CREATE TABLE IF NOT EXISTS registros (
-        legajo INT,
+        legajo INT(8),
         nombre VARCHAR(255) NOT NULL,
         apellido VARCHAR(255) NOT NULL,
         edad INT(2) NOT NULL,

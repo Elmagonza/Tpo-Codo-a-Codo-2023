@@ -39,7 +39,7 @@ class Nomina:
         # Una vez que la base de datos está establecida, creamos la tabla si no existe
     
         self.cursor.execute('''CREATE TABLE IF NOT EXISTS registros (
-        legajo INT,
+        legajo INT(8),
         nombre VARCHAR(255) NOT NULL,
         apellido VARCHAR(255) NOT NULL,
         edad INT(2) NOT NULL,
@@ -47,3 +47,61 @@ class Nomina:
         rama VARCHAR(20))''')
         self.conn.commit()
         
+        # Cerrar el cursor inicial y abrir uno nuevo con el parámetro dictionary=True
+        self.cursor.close()
+        self.cursor = self.conn.cursor(dictionary=True)
+        
+    def listar_registros(self):
+        self.cursor.execute("SELECT * FROM registros")
+        registros = self.cursor.fetchall()
+        return registros
+        
+    def consultar_registro(self, legajo):
+    # Consultamos un registro a partir de su legajo
+        self.cursor.execute(f"SELECT * FROM registros WHERE legajo =
+        {legajo}")
+        return self.cursor.fetchone()
+    
+    
+    def mostrar_registro(self, legajo):
+        # Mostramos los datos de un registro a partir de su legajo
+        registro = self.consultar_registro(legajo)
+        if registro:
+            print("-" * 40)
+            print(f'\tLegajo....: {registro["legajo"]}')
+            print(f'\tNombre....: {registro["nombre"]}')
+            print(f'\tApellido..: {registro["apellido"]}')
+            print(f'\tEdad......: {registro["edad"]}')
+            print(f'\tMail......: {registro["mail"]}')
+            print(f'\tRama......: {registro["rama"]}')
+            print("-" * 40)
+        else:
+            print("Registro no encontrado.")
+    
+                
+        
+        
+        
+#--------------------------------------------------------------------
+# Cuerpo del programa
+#--------------------------------------------------------------------
+# Crear una instancia de la clase Nomina
+nomina = Nomina(host='localhost', user='root', password='',
+database='miapp')
+
+#Ruta /registros
+@app.route("/registros", methods=["GET"])
+def listar_registros():
+    registros = nomina.listar_registros()
+    return jsonify(registros)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+    
+@app.route("/registros/<int:legajo>", methods=["GET"])
+def mostrar_registro(legajo):
+    registro = nomina.consultar_registro(legajo)
+    if registro:
+        return jsonify(registro)
+    else:
+        return "registro no encontrado", 404
