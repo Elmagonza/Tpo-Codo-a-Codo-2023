@@ -18,7 +18,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
             return response.json();
         }
         })
-    .then(function (data) {
+    .finally(function (data) {
         alert('Producto agregado correctamente.');
         // Limpiar el formulario para el proximo producto
         document.getElementById('legajo').value = "";
@@ -30,6 +30,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     })
     .catch(function (error) {
         // Mostramos el error, y no limpiamos el form.
-        alert('Error al agregar el producto.');                 
+        alert('Error al agregar el producto.');     
+        console.log("Error!")            
     });
 })

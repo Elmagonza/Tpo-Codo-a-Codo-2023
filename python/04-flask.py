@@ -10,8 +10,8 @@ import mysql.connector
 #from werkzeug.utils import secure_filename
 
 # No es necesario instalar, es parte del sistema standard de Python
-import os
-import time
+# import os
+# import time
 
 app = Flask(__name__)
 CORS(app) # Esto habilitará CORS para todas las rutas
