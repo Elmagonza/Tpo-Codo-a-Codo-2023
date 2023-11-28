@@ -77,13 +77,13 @@ nuevo_apellido, nueva_edad, nuevo_mail, nueva_rama):
             print(f'\tRama......: {registro["rama"]}')
             print("-"*40)
             
-    def eliminar_producto(self, legajo):
-        # Eliminamos un producto de la tabla a partir de su legajo
-        self.cursor.execute(f"DELETE FROM productos WHERE legajo =
+    def eliminar_registro(self, legajo):
+        # Eliminamos un registro de la tabla a partir de su legajo
+        self.cursor.execute(f"DELETE FROM registros WHERE legajo =
         {legajo}")
         self.conn.commit()
         return self.cursor.rowcount > 0
-    
+        
 #programa principal
 
 nomina = Nomina(host="localhost", user="root", password="", database="miapp")
