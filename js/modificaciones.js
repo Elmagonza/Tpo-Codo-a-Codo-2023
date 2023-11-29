@@ -13,7 +13,7 @@ const app = Vue.createApp({
     },
     methods: {
         obtenerRegistro() {
-            fetch(URL + 'registros/' + this.legajo)
+            fetch(URL + '/registros/' + this.legajo)
                 .then(response => {
                     if (response.ok) {
                         return response.json()
@@ -47,7 +47,7 @@ const app = Vue.createApp({
             formData.append('rama', this.rama); 
             //Utilizamos fetch para realizar una solicitud PUT a la API y guardar los cambios.
             
-            fetch(URL + 'registros/' + this.legajo, {
+            fetch(URL + '/registros/' + this.legajo, {
                 method: 'PUT',
                 body: formData,
             })

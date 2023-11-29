@@ -1,6 +1,6 @@
 const URL = "http://127.0.0.1:5000/"
 // Realizamos la solicitud GET al servidor para obtener todos los registros
-fetch(URL + 'registros')
+fetch(URL + '/registros')
     .then(function (response) {
         if (response.ok) {
             return response.json();
@@ -11,7 +11,7 @@ fetch(URL + 'registros')
         }
     })
     .then(function (data) {
-        let tablaregistros = document.getElementById('tablaregistros');
+        let tablaregistros = document.getElementById('tabla-registros');
         // Iteramos sobre los registros y agregamos filas a la tabla
         for (let registro of data) {
             let fila = document.createElement('tr');

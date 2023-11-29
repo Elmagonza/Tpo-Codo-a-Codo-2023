@@ -8,7 +8,7 @@ const app = Vue.createApp({
     methods: {
         obtenerRegistros() {
         // Obtenemos el contenido de la nómina
-            fetch(URL + 'registros')
+            fetch(URL + '/registros')
                 .then(response => {
                 // Parseamos la respuesta JSON
                     if (response.ok) { return response.json(); }})
@@ -23,7 +23,7 @@ const app = Vue.createApp({
         eliminarRegistro(legajo) {
             if (confirm('¿Estás seguro de que quieres eliminar este registro?')) {
 
-                fetch(URL + `registros/${legajo}`, { method: 'DELETE' })
+                fetch(URL + `/registros/${legajo}`, { method: 'DELETE' })
                     .then(response => {
                         if (response.ok) {
                             this.registros = this.registros.filter(registro => registro.legajo !== legajo);
