@@ -16,27 +16,27 @@
     <body>
         <section class="crud">
             <div class="topic">
-                <h1>Agregar Beneficiarios a la Nómina</h1>
+                <h1>Listar Beneficiarios de la Nómina</h1>
                 <h3>Codo a Codo 2023</h3>
             </div>
-            <form id="formulario" enctype="multipart/form-data">
-                <label for="legajo">Legajo:</label>
-                <input type="number" id="legajo" name="legajo" required><br>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required><br>
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" required><br>  
-                <label for="mail">Email:</label>
-                <input type="text" id="mail" name="mail">
-                <label for="rama">Rama:</label>
-                <input type="text" id="rama" name="rama">
-                <button type="submit">Agregar Beneficiario</button>
-                <a href="index.html">Menu principal</a> 
-            </form>
-            <script src="/js/altas.js"></script>
-        </section>    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Legajo</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Mail</th>
+                        <th>Rama</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaProductos"> </tbody>
+            </table>
+            <div class="contenedor-centrado">
+                <a href="index.html">Menu principal</a>
+            </div>
+            <script src="listado.js"></script>
+        </section>
     </body>
     <script src="js/headerandfooter.js"></script>
 </html>

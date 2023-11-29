@@ -17,8 +17,13 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         if (response.ok) {
             return response.json();
         }
-        })
-    .finally(function (data) {
+    })
+    .catch(function (error) {
+        // Mostramos el error, y no limpiamos el form.
+        alert('Error al agregar el producto.');     
+        console.error('Error:', error);            
+    })
+    .finally(function () {
         alert('Producto agregado correctamente.');
         // Limpiar el formulario para el proximo producto
         document.getElementById('legajo').value = "";
@@ -27,10 +32,6 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         document.getElementById('edad').value = "";
         document.getElementById('mail').value = "";
         document.getElementById('rama').value = "";
-    })
-    .catch(function (error) {
-        // Mostramos el error, y no limpiamos el form.
-        alert('Error al agregar el producto.');     
-        console.log("Error!")            
     });
 })
+
