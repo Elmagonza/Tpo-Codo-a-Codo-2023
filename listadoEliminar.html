@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <title>Grupo Scout Sagrado Corazón - CRUD</title>
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" sizes="32x32">
+        <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="crud">
+            <div class="topic">
+                <h1>Eliminar Beneficiarios de la Nómina</h1>
+                <h3>Codo a Codo 2023</h3>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Legajo</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th align="right">Rama</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="registro in registros">
+                        <td>{{ registro.legajo }}</td>
+                        <td>{{ registro.nombre }}</td>
+                        <td>{{ registro.apellido }}</td>
+                        <td align="right">{{ registro.rama }}</td>
+                        <td><button @click="eliminarregistro(registro.legajo)">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="contenedor-centrado">
+                <a href="index.html">Menu principal</a>
+            </div>
+        </section>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="js/listadoEliminar.js"></script>
+        <script src="js/headerandfooter.js"></script>
+    </body>
+</html>
