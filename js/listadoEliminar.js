@@ -26,9 +26,7 @@ const app = Vue.createApp({
                 fetch(URL + `registros/${legajo}`, { method: 'DELETE' })
                     .then(response => {
                         if (response.ok) {
-                            this.registros =
-
-                            this.registros.filter(registro => registro.legajo !== legajo);
+                            this.registros = this.registros.filter(registro => registro.legajo !== legajo);
                             alert('Registro eliminado correctamente.');
                         }}
                     )
