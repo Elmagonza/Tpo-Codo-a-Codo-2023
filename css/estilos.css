@@ -9,7 +9,6 @@
 /*  base styles  */
 body {
     background-image: linear-gradient(180deg, #3c9114 0%, #e1a497 100%);
-
 }
 
 #bodynosotros{
@@ -121,6 +120,7 @@ background-position: center ;
     grid-area: main;
     display:grid;
     grid-template-columns: 1fr; 
+    
 }
 .section2{
     display: flex;
@@ -443,6 +443,107 @@ background-position: center ;
     border-radius: 50%;
     width: 1em;
     
+}
+
+/*------------------------------------------------------------------------------------*/
+                                    /*Estilos CRUD*/
+/*------------------------------------------------------------------------------------*/
+.hundred{
+    height:100vh;
+}
+
+.crud{
+    font-family: Arial, sans-serif;
+    background-color: #3c9114;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 50%;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+.crud .contenedor-centrado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contenedor-centrado a{
+    color: white;
+    text-decoration: none;
+}
+.crud form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(54, 54, 54, 0.757);
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.crud table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(54, 54, 54, 0.757);
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+.crud label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.crud input[type="text"], input[type="number"], textarea {
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.crud input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.crud input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.crud button {
+    padding: 8px;
+    margin: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.crud button:hover {
+    background-color: #0056b3;
+}
+.crud a {
+    padding: 8px;
+    margin: 4px;
+    background-color: #3c9114;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 85%;
+}
+.crud a:hover {
+    background-color: #329603;
 }
 
     /*---Media Queries---*/
