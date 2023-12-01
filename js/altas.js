@@ -20,12 +20,12 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     })
     .catch(function (error) {
         // Mostramos el error, y no limpiamos el form.
-        alert('Error al agregar el producto.');     
+        alert('Error al agregar el registro.');     
         console.error('Error:', error);            
     })
     .finally(function () {
-        alert('Producto agregado correctamente.');
-        // Limpiar el formulario para el proximo producto
+        alert('Registro agregado correctamente.');
+        // Limpiar el formulario para el proximo registro
         document.getElementById('legajo').value = "";
         document.getElementById('nombre').value = "";
         document.getElementById('apellido').value = "";

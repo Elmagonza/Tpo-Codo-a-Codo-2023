@@ -21,9 +21,9 @@ class Nomina:
     def __init__(self, host, user, password, database):
         # Primero, establecemos una conexión sin especificar la base de datos
         self.conn = mysql.connector.connect(
-        host=host,
-        user=user,
-        password=password
+            host=host,
+            user=user,
+            password=password
         )   
         
         self.cursor = self.conn.cursor()
@@ -41,12 +41,12 @@ class Nomina:
         # Una vez que la base de datos está establecida, creamos la tabla si no existe
     
         self.cursor.execute('''CREATE TABLE IF NOT EXISTS registros (
-        legajo INT(8),
-        nombre VARCHAR(255) NOT NULL,
-        apellido VARCHAR(255) NOT NULL,
-        edad INT(2) NOT NULL,
-        mail VARCHAR(255),
-        rama VARCHAR(20))''')
+            legajo INT(8),
+            nombre VARCHAR(255) NOT NULL,
+            apellido VARCHAR(255) NOT NULL,
+            edad INT(2) NOT NULL,
+            mail VARCHAR(255),
+            rama VARCHAR(20))''')
         self.conn.commit()
         
         # Cerrar el cursor inicial y abrir uno nuevo con el parámetro dictionary=True
@@ -64,8 +64,7 @@ class Nomina:
         
     def consultar_registro(self, legajo):
     # Consultamos un registro a partir de su legajo
-        self.cursor.execute(f"SELECT * FROM registros WHERE legajo =
-        {legajo}")
+        self.cursor.execute(f"SELECT * FROM registros WHERE legajo = {legajo}")
         return self.cursor.fetchone()
     
     #----------------------------------------------------------------
@@ -136,6 +135,7 @@ def listar_registros():
 #----------------------------------------------------------------    
 @app.route("/registros/<int:legajo>", methods=["GET"])
 def mostrar_registro(legajo):
+    nomina.mostrar_registro(legajo)
     registro = nomina.consultar_registro(legajo)
     if registro:
         return jsonify(registro)
@@ -155,8 +155,7 @@ def agregar_registro():
     #nombre_base, extension = os.path.splitext(nombre_mail)
     #nombre_mail = f"{nombre_base}_{int(time.time())}{extension}"
     #mail.save(os.path.join(ruta_destino, nombre_mail))
-    if nomina.agregar_registro(legajo, nombre, apellido,edad,
-    mail, rama):
+    if nomina.agregar_registro(legajo, nombre, apellido,edad, mail, rama):
         return jsonify({"mensaje": "registro agregado"}), 201
     else:
         return jsonify({"mensaje": "registro ya existe"}), 400

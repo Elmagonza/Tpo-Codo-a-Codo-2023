@@ -8,7 +8,7 @@ const app = Vue.createApp({
             edad: '',
             mail: '',
             rama: '',
-            mostrarDatosregistro: false,
+            mostrarDatosRegistro: false,
         };
     },
     methods: {
@@ -30,7 +30,7 @@ const app = Vue.createApp({
                     this.edad = data.edad;
                     this.mail = data.mail;
                     this.rama= data.rama;
-                    this.mostrarDatosregistro = true;
+                    this.mostrarDatosRegistro = true;
                 })
                 .catch(error => {
                     console.log(error);
@@ -77,7 +77,7 @@ const app = Vue.createApp({
                 this.edad = '';
                 this.mail = '';
                 this.rama = '';
-                this.mostrarDatosregistro = false;
+                this.mostrarDatosRegistro = false;
             }
             }
             });

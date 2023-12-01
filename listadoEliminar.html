@@ -19,13 +19,13 @@
                 <h1>Eliminar Beneficiarios de la Nómina</h1>
                 <h3>Codo a Codo 2023</h3>
             </div>
-            <table>
+            <table cellspacing ="20">
                 <thead>
                     <tr>
                         <th>Legajo</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th align="right">Rama</th>
+                        <th allign="right">Rama</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -34,8 +34,8 @@
                         <td>{{ registro.legajo }}</td>
                         <td>{{ registro.nombre }}</td>
                         <td>{{ registro.apellido }}</td>
-                        <td align="right">{{ registro.rama }}</td>
-                        <td><button @click="eliminarregistro(registro.legajo)">Eliminar</button></td>
+                        <td allign="right">{{ registro.rama }}</td>
+                        <td><button @click="eliminarRegistro(registro.legajo)">Eliminar</button></td>
                     </tr>
                 </tbody>
             </table>
