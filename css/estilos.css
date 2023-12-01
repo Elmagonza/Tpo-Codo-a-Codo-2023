@@ -461,9 +461,10 @@ background-position: center ;
     margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
-    width: 70%;
-    height: auto;
-    max-height: 2000px;
+    width: 80%;
+    max-width: 700px;
+    min-height: 60vh;
+    max-height: auto;
     border: 1px solid lightslategray;
     border-radius: 5px;
 }
@@ -478,19 +479,20 @@ background-position: center ;
     text-decoration: none;
 }
 .crud form {
-    width: 500px;
-    margin: 0 auto;
+    width: 95%;
+    height: auto;
     padding: 20px;
     background-color: rgba(54, 54, 54, 0.757);
     border: 1px solid lightslategray;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 .crud table {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+    width: auto;
+    max-width: 100%;
+    padding: 0.5em;
     background-color: rgba(54, 54, 54, 0.757);
     border: 1px solid lightslategray;
     border-radius: 5px;
@@ -532,7 +534,8 @@ background-position: center ;
 }
 .crud a {
     padding: 8px;
-    margin: 4px;
+    width: auto;
+    text-align: center;
     background-color: #3c9114;
     color: #ffffff;
     border: none;
