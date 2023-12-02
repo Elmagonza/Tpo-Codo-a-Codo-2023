@@ -122,8 +122,8 @@ class Nomina:
 #--------------------------------------------------------------------
 
 # Crear una instancia de la clase Nomina
-nomina = Nomina(host='localhost', user='root', password='',
-database='miapp')
+nomina = Nomina(host='kevingcrimson.mysql.pythonanywhere-services.com', user='kevingcrimson', password='codoacodo',
+database='kevingcrimson$miapp')
 
 
 #----------------------------------------------------------------
